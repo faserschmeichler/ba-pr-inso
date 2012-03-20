@@ -1,0 +1,405 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{Abdelnur:2006:voipass}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Abdelnur}{A.}%
+     {H.}{H.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Cridlig}{C.}%
+     {V.}{V.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {State}{S.}%
+     {R.}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Festor}{F.}%
+     {O.}{O.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AH+1}
+  \strng{fullhash}{AHCVSRFO1}
+  \field{sortinit}{A}
+  \field{booktitle}{Proc. 1st IEEE Workshop VoIP Management and Security}
+  \verb{doi}
+  \verb 10.1109/VOIPMS.2006.1638119
+  \endverb
+  \field{pages}{29\bibrangedash 34}
+  \field{title}{VoIP security assessment: methods and tools}
+  \field{year}{2006}
+\endentry
+
+\entry{Anwar:2006:despatt}{inproceedings}{}
+  \name{author}{5}{}{%
+    {{}%
+     {Anwar}{A.}%
+     {Z.}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yurcik}{Y.}%
+     {W.}{W.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Johnson}{J.}%
+     {R.~E.}{R.~E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hafiz}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Campbell}{C.}%
+     {R.~H.}{R.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{AZ+1}
+  \strng{fullhash}{AZYWJREHMCRH1}
+  \field{sortinit}{A}
+  \field{booktitle}{Proc. 25th IEEE Int. Performance, Computing, and
+  Communications Conf. IPCCC 2006}
+  \verb{doi}
+  \verb 10.1109/.2006.1629443
+  \endverb
+  \field{title}{Multiple design patterns for voice over IP (VoIP) security}
+  \field{year}{2006}
+\endentry
+
+\entry{Butcher:2007:SecChall}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {Butcher}{B.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Li}{L.}%
+     {Xiangyang}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Guo}{G.}%
+     {Jinhua}{J.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{BDLXGJ1}
+  \strng{fullhash}{BDLXGJ1}
+  \field{sortinit}{B}
+  \verb{doi}
+  \verb 10.1109/TSMCC.2007.905853
+  \endverb
+  \field{number}{6}
+  \field{pages}{1152\bibrangedash 1162}
+  \field{title}{Security Challenge and Defense in VoIP Infrastructures}
+  \field{volume}{37}
+  \field{year}{2007}
+\endentry
+
+\entry{CaoWang:2009:DevLab}{article}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Cao}{C.}%
+     {X.}{X.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Caciula}{C.}%
+     {A.}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Wang}{W.}%
+     {Y.}{Y.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CX+1}
+  \strng{fullhash}{CXWYCAWY1}
+  \field{sortinit}{C}
+  \field{number}{2009}
+  \field{pages}{155 \bibrangedash  160}
+  \field{title}{Developing a multifunctional network laboratory for teaching
+  and re- search}
+  \field{journaltitle}{SIGITE '09: Proceedings of the 10th ACM confer- ence on
+  SIG-information technology education}
+  \field{year}{2009}
+\endentry
+
+\entry{Coulibaly:2010:secvoipb}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Coulibaly}{C.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Liu}{L.}%
+     {Lian~Hao}{L.~H.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{CELLH1}
+  \strng{fullhash}{CELLH1}
+  \field{sortinit}{C}
+  \field{booktitle}{Proc. 2nd Int Computer Engineering and Technology (ICCET)
+  Conf}
+  \verb{doi}
+  \verb 10.1109/ICCET.2010.5485790
+  \endverb
+  \field{title}{Security of Voip networks}
+  \field{volume}{3}
+  \field{year}{2010}
+\endentry
+
+\entry{eckert:2009:sicherheit}{book}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Eckert}{E.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Oldenbourg Wissensch.Vlg}%
+  }
+  \strng{namehash}{EC1}
+  \strng{fullhash}{EC1}
+  \field{sortinit}{E}
+  \field{isbn}{9783486589993}
+  \field{title}{IT-Sicherheit: Konzepte - Verfahren - Protokolle}
+  \verb{url}
+  \verb http://books.google.com/books?id=akxvOu7pY40C
+  \endverb
+  \field{year}{2009}
+\endentry
+
+\entry{Egger:2008:linVoip}{article}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Egger}{E.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Hirschbichler}{H.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{ECHM1}
+  \strng{fullhash}{ECHM1}
+  \field{sortinit}{E}
+  \field{number}{10}
+  \field{pages}{54 \bibrangedash  61}
+  \field{title}{VoIP Security}
+  \field{journaltitle}{Linux Magazin - Technical Review, Security}
+  \field{year}{2008}
+\endentry
+
+\entry{endler:2006:hacking}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Endler}{E.}%
+     {D.}{D.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Collier}{C.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {McGraw-Hill}%
+  }
+  \strng{namehash}{EDCM1}
+  \strng{fullhash}{EDCM1}
+  \field{sortinit}{E}
+  \field{isbn}{9780072263640}
+  \field{series}{Hacking Exposed}
+  \field{title}{Hacking exposed VoIP: voice over IP security secrets \&
+  solutions}
+  \verb{url}
+  \verb http://books.google.com/books?id=IPp07U0OktkC
+  \endverb
+  \field{year}{2006}
+\endentry
+
+\entry{eren:2007:voip}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Eren}{E.}%
+     {E.}{E.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Detken}{D.}%
+     {K.O.}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Hanser Fachbuchverlag}%
+  }
+  \strng{namehash}{EEDK1}
+  \strng{fullhash}{EEDK1}
+  \field{sortinit}{E}
+  \field{isbn}{9783446410862}
+  \field{title}{VoIP Security: Konzepte und L{\"o}sungen f{\"u}r sichere
+  VoIP-Kommunikation}
+  \verb{url}
+  \verb http://books.google.com/books?id=v8nE9ETF\_2kC
+  \endverb
+  \field{year}{2007}
+\endentry
+
+\entry{Hung:2006:seciss}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Hung}{H.}%
+     {Patrick C.~K.}{P.~C.~K.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Martin}{M.}%
+     {Miguel~Vargas}{M.~V.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{HPCKMMV1}
+  \strng{fullhash}{HPCKMMV1}
+  \field{sortinit}{H}
+  \field{booktitle}{Proc. Canadian Conf. Electrical and Computer Engineering
+  CCECE '06}
+  \verb{doi}
+  \verb 10.1109/CCECE.2006.277789
+  \endverb
+  \field{pages}{2361\bibrangedash 2364}
+  \field{title}{Security Issues in VOIP Applications}
+  \field{year}{2006}
+\endentry
+
+\entry{porter:2006:practicalvoip}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Porter}{P.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Porter}{P.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Syngress Publishing}%
+  }
+  \strng{namehash}{PTPT1}
+  \strng{fullhash}{PTPT1}
+  \field{sortinit}{P}
+  \field{isbn}{9781597490603}
+  \field{title}{Practical VoIP security}
+  \verb{url}
+  \verb http://books.google.com/books?id=BYxdyekyRlwC
+  \endverb
+  \field{year}{2006}
+\endentry
+
+\entry{Qu:2009:desactv}{inproceedings}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Qu}{Q.}%
+     {Zhaoyang}{Z.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Yang}{Y.}%
+     {Wei}{W.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{QZYW1}
+  \strng{fullhash}{QZYW1}
+  \field{sortinit}{Q}
+  \field{booktitle}{Proc. Int. Conf. Environmental Science and Information
+  Application Technology ESIAT 2009}
+  \verb{doi}
+  \verb 10.1109/ESIAT.2009.88
+  \endverb
+  \field{pages}{657\bibrangedash 660}
+  \field{title}{The Design of an Active VoIP Security Defense Model Based on
+  Dynamic Self-Adaptive Diffluence}
+  \field{volume}{1}
+  \field{year}{2009}
+\endentry
+
+\entry{Ronniger:2010:robflex}{inproceedings}{}
+  \name{author}{4}{}{%
+    {{}%
+     {Ronniger}{R.}%
+     {M.}{M.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Fankhauser}{F.}%
+     {F.}{F.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Schanes}{S.}%
+     {C.}{C.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Grechenig}{G.}%
+     {T.}{T.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{RM+1}
+  \strng{fullhash}{RMFFSCGT1}
+  \field{sortinit}{R}
+  \field{booktitle}{Proc. Int Internet Technology and Secured Transactions
+  (ICITST) Conf. for}
+  \field{pages}{1\bibrangedash 6}
+  \field{title}{A robust and flexible test environment for VoIP security tests}
+  \field{year}{2010}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

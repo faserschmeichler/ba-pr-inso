@@ -1,0 +1,87 @@
+This is BibTeX, Version 0.99d (TeX Live 2011)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: expose.aux
+The style file: biblatex.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: expose-blx.bib
+Database file #2: db.bib
+Warning--string name "ieee_j_smcc" is undefined
+--line 61 of file db.bib
+Biblatex version: 1.5
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2486 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2510 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2514 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2514 of file biblatex.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2631 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2631 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2631 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2631 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2631 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2631 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2631 of file biblatex.bst
+Name 3 in "X. Cao and Y. Wang and A. Caciula, and Y. Wang" has a comma at the end for entry CaoWang:2009:DevLab
+while executing---line 2631 of file biblatex.bst
+You've used 14 entries,
+            5995 wiz_defined-function locations,
+            1207 strings with 10694 characters,
+and the built_in function-call counts, 43264 in all, are:
+= -- 1618
+> -- 1533
+< -- 437
++ -- 501
+- -- 592
+* -- 3412
+:= -- 2747
+add.period$ -- 0
+call.type$ -- 14
+change.case$ -- 198
+chr.to.int$ -- 34
+cite$ -- 26
+duplicate$ -- 4802
+empty$ -- 4454
+format.name$ -- 973
+if$ -- 9785
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 0
+newline$ -- 395
+num.names$ -- 619
+pop$ -- 4192
+preamble$ -- 1
+purify$ -- 242
+quote$ -- 0
+skip$ -- 2570
+stack$ -- 0
+substring$ -- 870
+swap$ -- 1619
+text.length$ -- 400
+text.prefix$ -- 13
+top$ -- 1
+type$ -- 520
+warning$ -- 0
+while$ -- 286
+width$ -- 0
+write$ -- 380
+(There were 12 error messages)
