@@ -1,0 +1,179 @@
+\label{Grundlagen der IT-Sicherheit}
+%\begin{section}{Grundlagen der IT-Sicherheit}
+ In diesem Kapitel werden allgemeine Begriffe wie zum Beispiel die Grundbegriffe der
+ Sicherheit, diverse Sicherheitsziele aus dem Grundschutzkatalog sowie Schutzbedarf 
+ Bedrohungsanalysen behandelt. 
+ \\
+ Weiters wird eine klare Grenze zwischen Sicherheit und IT-Sicherheit gezogen. 
+ Abschließend wird auf das Teilgebiet der VoIP-Sicherheit eingegangen.
+ \\
+%\end{section}
+
+ \label{Sicherheitsziele}
+  \begin{section}{Sicherheitsziele}
+  Das deutsche Bundesamt für Sicherheit in der Informationstechnik (BSI) beschreibt 
+  folgende Sicherheitsziele (security objectives) in einem Sicherheitskatalog: 
+  \cite{BSIBedarf}
+  \begin{itemize}
+   \item Verfügbarkeit (availability)
+   \item Integrität (integrity)
+   \item Vertraulichkeit (privacy, confidentialty)
+  \end{itemize}
+  \pagebreak
+  
+   \begin{subsection}{Verfügbarkeit}
+    Verfügbarkeit (availability) meint die Eigenschaft eines Systems, innerhalb eines 
+    bestimmten Zeitraums mit einer bestimmten Wahrscheinlichkeit die vom eingesetzten 
+    System erwarteten Anforderungen zu erfüllen. Die Verfügbarkeit zählt zu den 
+    Qualitätsmerkmalen einer IT-Landschaft.
+    \\
+   \end{subsection}
+
+   \label{Integrität}
+   \begin{subsection}{Integrität}
+    Unter der Integrität (integrity) von Informationen versteht man die Vollständigkeit und 
+    Korrektheit (Unversehrtheit) der übertragenen Daten auf Sender- und auch Empfängerseite. 
+    Dabei wird davon ausgegangen, dass keine Manipulation der Daten auf dem Transportweg 
+    durchgeführt wurden und somit unveränderte Daten verschickt wurden. Um diese 
+    Datenintegrität an beiden Kommunikationsenden zu kontrollieren, kann man verschiedene 
+    Kontrollmethoden verwenden: \ac{Z.B.} Hash-Verfahren, message authentification codes 
+    oder digitale Signaturen. Um diesen Mechanismus durchführen zu können, sind die Inhalte 
+    der Daten mit den Kontrollmethoden direkt verknüpft. 
+    Durch unzureichende Integritätsprüfung können fehlerhafte Datensätze entstehen: Z.B. 
+    Fehlerhafte Produktionen, Falsche Warenlieferungen oder Verbuchungsfehler. 
+    In den letzten Jahren wird dem Verlust an Authentizität als Teil der Datenintegrität 
+    verstärktes Augenmerk gewidment. 
+    Im schlimmsten Fall wirken sich Fehler auf Zahlungen und Identitäten aus, welche an 
+    nicht berechtigte Personen ausgestellt werden. So kann es beispielsweise zu 
+    Identitätsdiebstahl kommen.
+    \cite{BSIInfosi} \cite{BSIa} \cite{BSIBegriffe1}
+    \\
+   \end{subsection}
+
+   \label{Vertraulichkeit}
+   \begin{subsection}{Vertraulichkeit}
+    Um eine sichere und effektive Datenübertragung und Verarbeitung zu gewährleisten, muss 
+    eine hohe Vertraulichkeit (confidentiality) erreicht werden und erhalten bleiben. 
+    Allgemein lässt sich die Vertraulichkeit als Gewährleistung beschreiben, bei welcher die 
+    zu verarbeitenden Daten nur an jene Personen zugestellt und verfügbar gemacht werden, die 
+    auch die nötigen Berechtigungen besitzen. Auf der anderen Seite werden Personen mit 
+    keinerlei Berechtigung von den Daten separiert.
+    \\
+    \end{subsection}
+
+    \label{Zuverlässigkeit}
+    \begin{subsection}{Zuverlässigkeit}
+     Microsoft definiert sechs Merkmale, welche auf einem System angewandt werden sollen. 
+     Diese Qualitätsmerkmale bestehen im Wesentlichen aus den oben genannten Komponenten 
+     Verfügbarkeit und Integrität.
+     \begin{enumerate} 
+      \item ausfallsicher \\
+       Das System kann dem Benutzer auch dann Dienste anbieten, wenn eine interne oder 
+       externe Unterbrechung stattfindet. (Verfügbarkeit)
+      \item wiederherstellbar \\
+       Das System kann nach einer benutzerbedingten oder systembedingten Unterbrechung 
+       mittels Instrumentation oder Diagnose problemlos wieder ohne Datenverlust in seinen 
+       ursprünglichen Zustand zurückgeführt werden. (Verfügbarkeit)
+      \item kontrolliert \\
+       Das System erfüllt im Bedarfsfall immer korrekt und rasch die Anforderungen an den 
+       gewünschten Dienst. (Verfügbarkeit, Integrität)
+      \item unterbrechungsfrei \\
+       Erforderliche Änderungen und Aktualisierungen unterbrechen den Systembetrieb nicht. 
+       (Verfügbarkeit)
+      \item produktionsbereit \\
+       Das System weist bereits bei der Auslieferung nur ein Minimum an Fehlern auf, 
+       wodurch nur eine begrenzte Zahl an vorhersehbaren Aktualisierungen nötig ist. 
+       (Verfügbarkeit)
+      \item berechenbar \\
+       Das System funktioniert wie erwartet bzw. wie vereinbart. Die Funktionalität von 
+       früher bleibt weiter erhalten. (Verfügbarkeit, Integrität) \\
+      \cite{Micro05}
+     \end{enumerate}
+    \end{subsection}
+  \end{section}
+
+ \label{Schutzbedarf}
+ \begin{section}{Schutzbedarf}
+  Der Schutz von Daten und Informationsflüssen gehört für die Unternehmen und öffentlichen
+  Einrichtungen von heute zu den heikelsten und wichtigsten Aufgaben. Ständig aktuelle 
+  Daten sind ein unerlässliches Gut für Unternehmen und sollten ständig auf dem neuesten 
+  Stand sein. Um diese Daten-Updates durchführen zu können, werden möglichst viele 
+  Informationen auf Datenträgern persistent gespeichert. Dabei kann sichergestellt werden, 
+  dass diese Daten keinem Risiko ausgesetzt sind sondern mittels spezieller Methodik 
+  gesichert und verwahrt werden. Andererseits gibt es aber auch Daten, welche nicht oder 
+  nur schwach gesichert werden. Dies kann im schlimmsten Fall zum Verlust von Daten und 
+  erheblichen Geldbeträgen führen. Grundlegende Sicherheitsmaßnahmen sind mithilfe von 
+  geringen Mitteln und Maßnahmen zu erreichen. \\
+  \\
+  Der Schutzbedarf "Hoch" bedeutet, dass für die Abdeckung dieser Schutzkategorien 
+  spezielle Maßnahmen ergriffen werden müssen. 
+  Das \ac{BSI} stellte eine Zusammenstellung aus IT-Grundschutz-Vorgehensweisen und IT-Grundschutzkatalogen
+  an, welche die Voraussetzungen für den Einsatz in den unterschiedlichsten Umgebungen 
+  darstellt. \\
+  \\
+  Der Trend zur Speicherung aller Arten von Daten gehört genauso zum alltäglichen Leben 
+  wie der Computer selbst. Von Vorratsdatenspeicherung bis hin zu Onlinedatenspeicherung 
+  vernetzt über den Globus betrifft das Thema fast jeden Menschen. Selbst der Staat setzt 
+  bei Speicherung von Patientendaten und Steuerdaten auf Informationsvernetzung und - 
+  speicherung. \\
+  \\
+  Um den teilweise öffentlichen Forderung an Konsistenz und Sicherheit nachkommen zu 
+  können, muss der Sicherheitsgrad hoch und der Schutzbedarf gedeckt sein. 
+  Schutzbedarf selbst ist nicht quantifizierbar - aber das \ac{BSI} teilt diesen in drei 
+  Kategorien: \\
+  \begin{enumerate} 
+   \item Normal \\
+    Die Schadensauswirkungen sind begrenzt und überschaubar.
+   \item Hoch \\
+    Die Schadensauswirkungen können beträchtlich sein.
+   \item Sehr Hoch \\
+    Die Schadensauswirkungen können ein existentiell bedrohliches bzw. katastrophales 
+    Ausmaß erreichen. \cite{BSIBedarf}
+  \end{enumerate}
+  \pagebreak
+
+  Die Sicherheit von Daten und Systemen beschränkt sich heute nur auf technische 
+  Gegebenheiten sondern umfasst auch die Sicherheit von organisatorischen und personellen 
+  Umgebungsvariablen. Bei diesen ist es enorm wichtig, dass man behutsam und mit großer 
+  Flexibilität ans Werk geht. Des Weiteren ist es wichtig, dass mit der richtige Umgang 
+  mit sensiblen Daten und mit Betriebsvariablen sichergestellt wird. \\
+  \\
+  Für die heutigen Entwicklungsschritte in der Vernetzungstechnologie sind folgende 
+  Faktoren prägend: \\
+  
+  \begin{enumerate} 
+   \item Vernetzung \\
+    Das Phänomen der Vernetzung wurden in den letzten Jahren durch Internet, VoIP und 
+    viele andere technische Errungenschaften verstärkt. Die rasante Entwicklung in den 
+    letzten zwei Jahrzehnten hat gezeigt, dass heute nicht mehr isoliert und lokal 
+    gebunden gearbeitet wird, sondern mit verschiedenen Rechner und Menschen rund um den 
+    Globus kommuniziert wird. Die globale Vernetzung bietet viele verschiedene 
+    Möglichkeiten für verteiltes Arbeiten. So können etwa verteilte Ressourcen, gemeinsam 
+    genutzte Datenbestände und Cloudcomputing zum eigenen Vorteil genutzt werden. \\
+ 
+   \item IT-Verarbeitung und Durchdringung \\
+ 
+ 
+   \item Schwindende Netzgrenzen \\
+ 
+ 
+    \cite{BSIa}
+   \end{enumerate}
+ \end{section}
+
+ \begin{section}{IT-Schutzkataloge}
+  \cite{BSIITkat}
+ \end{section}
+
+ \label{Firewalls}
+ \begin{section}{Firewalls}
+
+  \label{Sicherheitsdienste einer Firewall}
+  \begin{subsection}{Sicherheitsdienste einer Firewall}
+  \end{subsection}
+ 
+  \label{Firewall-Konzepte}
+  \begin{subsection}{Firewall-Konzepte}
+  \end{subsection}
+ \end{section}
+\pagebreak

@@ -1,0 +1,90 @@
+\documentclass [a4paper,11pt,oneside,german,webreferences,todo]{INSOthesis}
+
+\thesistitle{Unterstützung der IT–Sicherheit von VoIP–Infrastrukturen durch die Verwendung spezialisierter VoIP–Firewalls}
+%\thesisshorttitle{Shorttitle of the Thesis}
+%\thesissubtitle{Optional Subtitle} % optional
+\thesisdate{11.11.2011}
+
+% all titles and designations have to be gender-related!
+\thesistype{Bakkalaureatsarbeit}{Bachelor's Thesis}
+\thesisdegree{Bakk.tech.}{Bakk.tech.}
+\thesiscurriculum{Wirtschaftsinformatik}{Business Informatics} % your study
+\thesisauthor{Philipp Schaden} % your name
+\thesisauthoraddress{Aschau 93, 7432 Oberschützen} % your address
+\thesismatrikelno{0626698} % your registration number
+
+% advisor
+%\thesisauthorpreamble {Verfasser}
+\thesisadvisorpreamble {Betreuung}
+%\thesisadvisorone {Thomas Grechenig}
+\thesisadvisortwo {Florian Fankhauser}
+%\thesisadvisorthree {Vorname Nachname}
+
+% Bibliographie file
+\bibliography{bibliography/references}
+
+\hypersetup{
+  %colorlinks=false % enable and disable frames arround links
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Can be used to add additional informations
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \AfterTitlePages{}
+% \AfterDeclaration{}
+% \AfterAcknowledgements{}
+% \AfterAbstract{}
+% \AfterListOfFigures{}
+% \AfterListOfTables{}
+% \AfterAbbreviations{}
+% \AfterBibliography{}
+
+\includecomment{comment} % to show all comments
+
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   CONTENTS    %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auskommentiert!
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Introduction}
+%\label{ch:intro}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{chapters/introduction}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Einleitung}
+\label{ch:ch1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{chapters/ch1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Grundlagen der IT-Sicherheit}
+\label{ch:ch2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{chapters/ch2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Typographic Design}
+%\label{ch:typo}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{chapters/design}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\chapter{Bibliographic Issues}
+%\label{ch:bibliographic}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{chapters/bibliographic}
+
+%Eine Abkürzung: \ac{TU}
+\appendix
+
+% insert bibliography and such stuff
+\printbibliography
+\BackMatter
+\end{document}
