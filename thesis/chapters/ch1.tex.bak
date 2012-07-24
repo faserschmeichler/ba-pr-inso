@@ -1,0 +1,86 @@
+\begin{section}{Problemstellung}
+\begin{subsection}{Allgemeine Problemstellung}
+Voice Over Internet Protocol (kurz VoIP) ist eine sehr stark wachsende und häufig verwendete Technologie. Insbesondere in großen – aber auch mittelgroßen - Unternehmen findet diese Kommunikationsart Anklang.
+Durch diesen hohen Verbreitungsgrad sind viele Sicherheitsprobleme entstanden, welche sich im Laufe der Zeit zu kritischen Bereichen der IT--Sicherheit entwickelt haben.
+\\
+In dieser wissenschaftlichen Arbeit möchte ich daher die Sicherheit in VoIP-Netzwerken erörtern und die Absicherungsmöglichkeiten mittels einer speziellen VoIP--Firewall ergründen bzw. Sicherheitslücken und Sicherheitsrisiken aufzeigen.
+\end{subsection}
+\begin{subsection}{Detaillierte Problemstellung}
+Im Rahmen dieser wissenschaftlichen Arbeit werde ich die Sicherheitsaspekte einer Voice Over IP Infrastruktur näher erörtern und die dabei entstehende Problematik der Absicherung diskutieren.
+In den letzten Jahren wurden VoIP-Netzwerke immer interessantere Ziele für moderne Angriffe aus dem Netz. Die Absicherung dieser Netzwerke ist daher ein sehr kritischer Bereich und eine ebenso kritische Aufgabe.
+\\
+Für Unternehmen ist ein gesichertes Netzwerk die Basis eines zuverlässigen Betriebs und soll daher möglichst ausfallsicher sein.
+Im Themenbereich Sicherheit von IT-Strukturen im Netzwerk gibt es eine Reihe von Hypothesen zu deren Absicherung. Im Rahmen dieser Arbeit werden wird eine Testumgebung in einem Labor eingerichtet, welche VoIP-Komponenten enthält. In diesem Testlauf werden Angriffe eruiert, auf eine spezielle VoIP-Firewall getestet und die Auswirkungen auf die VoIP-Umgebung ermittelt.\\
+Die Ergebnisse werden anschließend analysiert.
+\\
+\\
+Nicht nur konventionell vernetzte Systeme sind Ziele von Attacken sondern auch VoIP- Netzwerke, welche die Schwachstellen von diesen konventionellen IP-basierten Netzwerken erben.
+So sind beispielsweise Man-in-the-Middle oder Denial of Service (DoS) Attacken große Gefahrenquellen, die einen störungsfreien Betrieb oftmals verhindern können. Darüber hinaus gibt es natürlich auch Angriffsmethoden, die speziell auf VoIP abzielen.
+\\
+Diese gilt es möglichst ganz zu neutralisieren oder die Absicherung möglichst hoch zu halten.
+\end{subsection}
+\end{section}
+\pagebreak
+
+\begin{section}{Erwartetes Resultat}
+Fachliches Ziel dieser Arbeit ist die Darstellung von relevanten Problemen im Bereich von VoIP sowohl im unternehmerischen Umfeld als auch im privaten Bereich. Darauf aufbauend sollen Lösungsmuster dargestellt und analysiert werden. 
+
+Es sollen bestehende und „vererbte“ Probleme demonstriert und mit Lösungsmöglichkeiten und Abhilfen versehen werden. 
+Danach sollen die recherchierten Problemlösungen anhand einer Testumgebung im Labor mittels einer speziellen VoIP--Firewall getestet und dokumentiert werden.
+
+Konkret wird auf die Fragestellung eingegangen, wie sich eine IT--Landschaft mit VoIP--Einsatz gegen gegenwärtige Probleme (wie z.B. DoS (Denial of Service), Phishing, Spoofing) absichern kann und welche Effekte dabei auftreten können. Ein reibungsloser Betrieb der IT-Umgebung soll soweit wie möglich aufrechterhalten werden.
+Im Bereich der Absicherung von kleinen bis großen Firmennetzwerken gibt es etablierte und gereifte Mechanismen und Konzepte, die vom Großteil der Abnehmer verwendet werden. 
+\\
+Der Einsatz von möglichst vielen Mechanismen und Geräten bedeutet nicht, dass der Schutzfaktor maximal ist. Somit ist es aus vielerlei Standpunkt wichtig, entsprechende Methoden und Vorgehensweisen bei der Absicherung von VoIP zu evaluieren und zu vergleichen.
+Am Beginn der Arbeit werden zuerst grundlegende Themen zu IT--Sicherheit, VoIP und Firewalls beschrieben und abgehandelt. Darauf aufbauend bildet das Kapitel zu Angriffe auf VoIP einen detaillierten Einblick in die Gefahrenwelt einer VoIP--Umgebung. Es wird beschrieben, wie Angriffe entstehen können und woher diese überhaupt kommen können. Anschließend werden im Kapitel Absicherungsmechanismen vorgestellt und deren Wirksamkeit beim Einsatz gegen verschiedene Angriffsszenarien deutlich gemacht.
+
+In den letzten beiden Abschnitten der Arbeit wird der praktische Teil hervorgehoben. Hierbei werden detaillierte Angriffsschritte vorgenommen und protokolliert sowie Versuche zur Abwehr und Einsatzmöglichkeit und Konfigurationsmethoden von speziellen Firewalls näher erläutert und verglichen. Dabei wird auf die Einsetzbarkeit, Sinnhaftigkeit und Effizienz genauer eingegangen.
+
+Der Schluss wird die Zusammenfassung der Arbeit sowie ein Ausblick auf kommende Themen repräsentieren.
+\end{section}
+\pagebreak
+
+\begin{section}{Methodisches Vorgehen}
+Diese Arbeit zur Unterstützung der Sicherheit von modernen VoIP-Netzwerken mittels spezialisierter Firewalls basiert großteils auf theoretischer Ausarbeitung, die sich auf aktuelle Literatur stützt.
+\\
+Hinzu kommt ein praktischer Teil, welcher in die Arbeit einfließen wird. Hierbei wird eine spezielle Hardware-Firewall für VoIP Netzwerke herangezogen, um Angriffe und Methoden zur Abwehr testen und beobachten zu können. Zusätzlich werden die Ergebnisse empirischer und praktischer Art gesondert und sorgfältig dokumentiert.
+\\
+Das methodische Vorgehen bei der Verfassung dieser Arbeit basiert auf dem Einlesen in die entsprechende Fachliteratur, welche in der ersten Phase zur Bearbeitung der Basisthemen Security, Voice over IP und Firewall-Absicherung dient und in der darauffolgenden Phase Fachwissen zum Thema VoIP-Firewalls in verschiedenen VoIP-Infrastrukturen liefert.
+\\
+Das Ergebnis dieser Fachrecherche ist ein tiefer Einblick in das Thema VoIP Security und die aktuellsten technischen Möglichkeiten zur Einsetzung von Firewall in diesem Bereich. 
+Aufbauend auf dem Wissen aus Grundlagen und Fachliteratur kann ein Vergleich bzw. eine Bewertung und Auswahl der Methoden und Empfehlungen vorgenommen werden. 
+\end{section}
+\pagebreak
+
+\begin{section}{State of the Art}
+In der aktuellen Sichtweise auf Problem und Bedrohungen der VoIP Security steht eine
+Firewall-Lösung ganz oben.
+Um diese Testen zu können, müssen bestimmte Richtlinien für Testumgebungen eingehalten
+werden.
+\\
+In diesen Testumgebungen werden somit spezielle Werkzeuge und Methoden bereitgestellt. 
+\\
+Den zentralen Punkt der Testumgebung bildet die VoIP-Firewall. Diese ist speziell
+ausgerichtet und ist der zentrale Angriffspunkt des Testnetzwerkes.
+\\
+Aber auch VoIP-Software muss auf Schwachstellen getestet werden.
+Es ist wichtig, dass die vordefinierten Sicherheitsziele eingehalten werden und sich
+Mechanismen einbetten lassen, die gegen Angriffe wirksam sind.
+\\
+Drei Muster spezifischer Sicherheitsprobleme auf VoIP Implementierungen bezogen treten
+häufig auf: (A) sicherer Verkehr durch eine Firewall bzw. eines NATs; (B) Entdeckung und
+Abschwächung von DDoS (Distributed-Denial-of-Service) Attacken; und (C) Absicherung
+gegen das heimliche Abhören. Da Verkäufer viele Produkte mit ähnlicher oder
+überschneidender Funktionalität entwerfen, ist es wichtig, dass man sich vor der
+Anschaffung ein Design für die Absicherung des Zielnetzwerkes überlegt hat.
+\\
+Falls ein Netzwerk wenige Sicherheitsvorkehrungen aufweist, ist es unschwer möglich, VoIPTelefone
+bzw. das gesamte VoIP-Netzwerk zu hacken.
+\\
+Um die richtigen Sicherheitsmaßnahmen für eine gegebene Infrastruktur zu wählen, muss
+man sich natürlich Vorkenntnisse durch Recherche aneignen und sich in andere
+Erfahrungsberichte einlesen. 
+\\
+%Beispielzitat: (alle) \nocite{*}
+\end{section}
+\pagebreak
