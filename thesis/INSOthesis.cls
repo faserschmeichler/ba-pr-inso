@@ -254,13 +254,15 @@
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%  FRONT MATTERS                      %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \setcounter{tocdepth}{2}
+  % \setcounter{tocdepth}{2}
+  \setcounter{tocdepth}{5}
   \FrontMatter
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%  MAIN MATTERS                       %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \mainmatter
-  \setcounter{secnumdepth}{2}
+  % \setcounter{secnumdepth}{2}
+  \setcounter{secnumdepth}{5}
   %\setsecnumdepth{subsection}% alternative B
   \aliaspagestyle{chapter}{\chapterheadings}
   \pagestyle{\documentheadings}
