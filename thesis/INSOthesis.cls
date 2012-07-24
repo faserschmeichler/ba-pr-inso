@@ -11,7 +11,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Information about the class 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\def\fileversion{Version 1.0}
+\def\fileversion{Version 1.1}
 \def\filedate{2011/07/14}
 \def\filedescription{INSO thesis Document Class}
 \def\fileauthor{Stefan Taber}
@@ -40,7 +40,7 @@
 \newif\ifthesis@insotitlepageDE		\thesis@insotitlepageDEfalse
 \newif\ifthesis@insotitlepageEN		\thesis@insotitlepageENfalse
 % language
-\newif\ifthesis@english			\thesis@englishfalse
+\newif\ifthesis@english				\thesis@englishfalse
 % bachelor
 \newif\ifthesis@masterthesis		\thesis@masterthesistrue
 % abstract
@@ -48,23 +48,38 @@
 \newif\ifthesis@acknowledgements	\thesis@acknowledgementstrue
 \newif\ifthesis@listoffigures		\thesis@listoffigurestrue
 \newif\ifthesis@listoftables		\thesis@listoftablestrue
-\newif\ifthesis@listofalgorithms	\thesis@listofalgorithmstrue
+\newif\ifthesis@listoflistings		\thesis@listoflistingsfalse
+\newif\ifthesis@listofalgorithms	\thesis@listofalgorithmsfalse
 \newif\ifthesis@listofabbrev		\thesis@listofabbrevtrue
 \newif\ifthesis@todonotes		\thesis@todonotesfalse
 % commons
 \newif\ifAssistance			\Assistancetrue
 \newif\ifthesis@webreferences		\thesis@webreferencestrue
+% abbreviations
+\newif\ifglossary			\glossaryfalse
+\newif\ifacronym			\acronymtrue
+\newif\ifglossaries			\glossariestrue
+% index
+\newif\ifthesis@indextop	\thesis@indextopfalse
+\newif\ifthesis@toc			\thesis@toctrue
+
+\newif\ifthesis@doublepage		\thesis@doublepagefalse
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % OPTIONS
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% abbreviations
+\DeclareOption{acronym}		{\acronymtrue}
+\DeclareOption{noacronym}	{\acronymfalse}
+\DeclareOption{glossary}	{\glossarytrue}
+\DeclareOption{noglossary}	{\glossaryfalse}
 % bachelor
 \DeclareOption{bachelor}{
   \thesis@masterthesisfalse
-  \thesis@declarationfalse
   \thesis@acknowledgementsfalse
+  \thesis@declarationfalse
 }
 % commons
 \DeclareOption{noassistance}	{\Assistancefalse}
@@ -78,6 +93,7 @@
 \DeclareOption{acknowledgements}{\thesis@acknowledgementstrue}
 \DeclareOption{listoffigures}	{\thesis@listoffigurestrue}
 \DeclareOption{listoftables}	{\thesis@listoftablestrue}
+\DeclareOption{listoflistings}	{\thesis@listoflistingstrue}
 \DeclareOption{listofalgorithms}{\thesis@listofalgorithmstrue}
 \DeclareOption{listofabbrev}	{\thesis@listofabbrevtrue}
 
@@ -85,21 +101,30 @@
 \DeclareOption{noacknowledgements}	{\thesis@acknowledgementsfalse}
 \DeclareOption{nolistoffigures}		{\thesis@listoffiguresfalse}
 \DeclareOption{nolistoftables}		{\thesis@listoftablesfalse}
+\DeclareOption{nolistoflistings}	{\thesis@listoflistingsfalse}
 \DeclareOption{nolistofalgorithms}	{\thesis@listofalgorithmsfalse}
 \DeclareOption{nolistofabbrev}		{\thesis@listofabbrevfalse}
 % language support
 \DeclareOption{english} {\thesis@englishtrue}
 \DeclareOption{german} 	{\thesis@englishfalse}
 \DeclareOption{ngerman} {\thesis@englishfalse}
+\DeclareOption{deutsch} {\thesis@englishfalse}
 % titlepages
-\DeclareOption{tutitlepageEN}		{\thesis@tutitlepageENtrue\thesis@defaulttitlepagesfalse}
-\DeclareOption{insotitlepageEN}		{\thesis@insotitlepageENtrue\thesis@defaulttitlepagesfalse}
-\DeclareOption{tutitlepageDE}		{\thesis@tutitlepageDEtrue\thesis@defaulttitlepagesfalse}
-\DeclareOption{insotitlepageDE}		{\thesis@insotitlepageDEtrue\thesis@defaulttitlepagesfalse}
-\DeclareOption{notutitlepageEN}		{\thesis@tutitlepageENfalse\thesis@defaulttitlepagesfalse}
-\DeclareOption{noinsotitlepageEN}	{\thesis@insotitlepageENfalse\thesis@defaulttitlepagesfalse}
-\DeclareOption{notutitlepageDE}		{\thesis@tutitlepageDEfalse\thesis@defaulttitlepagesfalse}
-\DeclareOption{noinsotitlepageDE}	{\thesis@insotitlepageDEfalse\thesis@defaulttitlepagesfalse}
+\DeclareOption{tutitlepageEN}		{\thesis@tutitlepageENtrue		\thesis@defaulttitlepagesfalse}
+\DeclareOption{insotitlepageEN}		{\thesis@insotitlepageENtrue	\thesis@defaulttitlepagesfalse}
+\DeclareOption{tutitlepageDE}		{\thesis@tutitlepageDEtrue		\thesis@defaulttitlepagesfalse}
+\DeclareOption{insotitlepageDE}		{\thesis@insotitlepageDEtrue	\thesis@defaulttitlepagesfalse}
+\DeclareOption{notutitlepageEN}		{\thesis@tutitlepageENfalse		\thesis@defaulttitlepagesfalse}
+\DeclareOption{noinsotitlepageEN}	{\thesis@insotitlepageENfalse	\thesis@defaulttitlepagesfalse}
+\DeclareOption{notutitlepageDE}		{\thesis@tutitlepageDEfalse		\thesis@defaulttitlepagesfalse}
+\DeclareOption{noinsotitlepageDE}	{\thesis@insotitlepageDEfalse	\thesis@defaulttitlepagesfalse}
+% index
+\DeclareOption{indexbottom}			{\thesis@indextopfalse}
+\DeclareOption{indextop}			{\thesis@indextoptrue}
+\DeclareOption{indextoc}			{\thesis@toctrue}
+\DeclareOption{noindextoc}			{\thesis@tocfalse}
+% layout
+\DeclareOption{twoside}				{\thesis@doublepagetrue \PassOptionsToClass{\CurrentOption}{memoir}}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
 % default options
 \ExecuteOptions{a4paper, 10pt, ngerman}
@@ -110,41 +135,82 @@
 % USE Packages
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% standard packages 
 \RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[bf]{caption}
 \RequirePackage[german,ngerman,english]{babel}
 \RequirePackage{geometry}[2010/09/12]
+\RequirePackage{url}
+\RequirePackage[table]{xcolor}
+\RequirePackage{varioref}
+\RequirePackage[pdfusetitle]{hyperref}					% links in pdf
+\RequirePackage[all]{hypcap}
+\RequirePackage{graphicx}
+\RequirePackage{tabularx}
+\RequirePackage{longtable}
+\RequirePackage{multirow}
+\RequirePackage{float}
+
+% programming packages
 \RequirePackage{calc}
 \RequirePackage{ifthen}
 \RequirePackage{etoolbox}
 \RequirePackage{ifpdf}
 \let\footruleskip\relax % for compatibility of memoir and fancyhdr
-\RequirePackage{lastpage}
-\RequirePackage{fancyhdr}
-\RequirePackage{graphicx}
-\RequirePackage{tikz}
-\usetikzlibrary{arrows,automata}
-\RequirePackage{color}
+
+% important packages
+\RequirePackage{styles/INSO}
+\RequirePackage{styles/TUINFDA}
+\RequirePackage{biblatex}
+\RequirePackage[lined,linesnumbered,algochapter]{algorithm2e} % Algorithm-Environment
+\RequirePackage{listings}
+\RequirePackage[hang,bottom,norule]{footmisc}
+% glossaries
+\ifacronym
+  \RequirePackage[acronym, toc, shortcuts]{glossaries}
+  \glossariestrue
+\else
+  \RequirePackage[toc, shortcuts]{glossaries}
+  \ifglossary
+    \glossariestrue
+  \else
+    \glossariesfalse
+	\renewcommand{\glsdoifexists}[2]{%
+	  \ifglsentryexists{#1}{#2}{#1}
+	}
+  \fi
+\fi
+%
 \ifthesis@todonotes
   \RequirePackage{todonotes}
 \else
   \RequirePackage[obeyDraft]{todonotes}
 \fi
-\RequirePackage{biblatex}
-\RequirePackage{fix-cm}
-\RequirePackage{styles/INSO}
-\RequirePackage{styles/TUINFDA}
-\RequirePackage{url}
-\RequirePackage{hyperref}					% links in pdf
-\RequirePackage{verbatim}            			% Code-Environment
-\RequirePackage[lined,linesnumbered,algochapter]{algorithm2e} % Algorithm-Environment
-\RequirePackage{needspace}
-\RequirePackage{pgf}					
-\RequirePackage[printonlyused]{acronym} 
-\RequirePackage{listings}
-\RequirePackage{comment}
-\RequirePackage{ifdraft}
-\RequirePackage[hang,bottom,norule]{footmisc}
+\RequirePackage{fancyhdr}
+\RequirePackage{tikz}
+\usetikzlibrary{arrows,automata}
+%\RequirePackage[standard]{ntheorem}
+
+% necessary packages
+\RequirePackage{lastpage}
+\RequirePackage{pgf}
+\DisemulatePackage{setspace}
 \RequirePackage{setspace}
+\RequirePackage{titlesec}
+%\RequirePackage{sectsty}
+
+% optional packages
+\RequirePackage{fix-cm}
+\RequirePackage{verbatim}            			% Code-Environment
+\RequirePackage{needspace}
+\RequirePackage{ifdraft}
+
+% test packages
+%\RequirePackage{morewrites}
+%\RequirePackage {splitidx}
+% \RequirePackage{comment} % wurde entfernt, weil keine streams mehr vorhanden waren. Latex unterstüzt nur 16 offene Write-Streams.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -166,17 +232,17 @@
 % Expose informations
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\gdef\@title		{Titel der Arbeit}
+%\gdef\@title		{Titel der Arbeit}
 \gdef\@shorttitle	{\@title}
-\gdef\@subtitle		{Untertitel der Arbeit}
-\gdef\@author		{Vorname Nachname}
+\gdef\@subtitle		{} %%% PS: geändert
+%\gdef\@author		{Vorname Nachname}
 \gdef\@date		{Datum}
 
-\gdef\title#1		{\xdef\@title		{#1}}
-\gdef\shorttitle#1	{\xdef\@shorttitle	{#1}}
-\gdef\subtitle#1	{\xdef\@subtitle	{#1}}
-\gdef\author#1		{\xdef\@author		{#1}}
-\gdef\date#1		{\xdef\@date		{#1}}
+%\gdef\title#1		{\xdef\@title		{#1}}
+\gdef\shorttitle#1	{\gdef\@shorttitle	{#1}}
+\gdef\subtitle#1	{\gdef\@subtitle	{#1}}
+%\gdef\author#1		{\xdef\@author		{#1}}
+%\gdef\date#1		{\gdef\@date		{#1}}
 
 \gdef\@thesistitle		{\@title}
 \gdef\@thesisshorttitle		{\@shorttitle}
@@ -207,21 +273,21 @@
 \gdef\@thesisauthorpreamble	{Verfasser/In}
 \gdef\@thesisadvisorpreamble	{Betreuung}
 
-\gdef\thesistitle#1		{\xdef\@title			{#1}}
-\gdef\thesisshorttitle#1	{\xdef\@shorttitle		{#1}}
-\gdef\thesissubtitle#1		{\xdef\@subtitle		{#1}}
-\gdef\thesisdate#1		{\xdef\@date			{#1}}
-\gdef\thesistype#1#2		{\xdef\@thesistype		{#1}	\xdef\@thesistypeen	{#2}}
-\gdef\thesisdegree#1#2		{\xdef\@thesisdegree		{#1}	\xdef\@thesisdegreeen	{#2}}
-\gdef\thesiscurriculum#1#2	{\xdef\@thesiscurriculum	{#1}	\xdef\@thesiscurriculumen{#2}}
-\gdef\thesisauthor#1		{\xdef\@author			{#1}}
-\gdef\thesisauthoraddress#1	{\xdef\@thesisauthoraddress	{#1}}
-\gdef\thesismatrikelno#1	{\xdef\@thesismatrikelno	{#1}}
-\gdef\thesisadvisorone#1	{\xdef\@thesisadvisor@one	{#1}}
-\gdef\thesisadvisortwo#1	{\xdef\@thesisadvisor@two	{#1}}
-\gdef\thesisadvisorthree#1	{\xdef\@thesisadvisor@three	{#1}}
-\gdef\thesisauthorpreamble#1	{\xdef\@thesisauthorpreamble	{#1}}
-\gdef\thesisadvisorpreamble#1	{\xdef\@thesisadvisorpreamble	{#1}}
+\gdef\thesistitle#1		{\title				{#1}}
+\gdef\thesisshorttitle#1	{\gdef\@shorttitle		{#1}}
+\gdef\thesissubtitle#1		{\gdef\@subtitle		{#1}}
+\gdef\thesisdate#1		{\date				{#1}}
+\gdef\thesistype#1#2		{\gdef\@thesistype		{#1}	\gdef\@thesistypeen	{#2}}
+\gdef\thesisdegree#1#2		{\gdef\@thesisdegree		{#1}	\gdef\@thesisdegreeen	{#2}}
+\gdef\thesiscurriculum#1#2	{\gdef\@thesiscurriculum	{#1}	\gdef\@thesiscurriculumen{#2}}
+\gdef\thesisauthor#1		{\author			{#1}}
+\gdef\thesisauthoraddress#1	{\gdef\@thesisauthoraddress	{#1}}
+\gdef\thesismatrikelno#1	{\gdef\@thesismatrikelno	{#1}}
+\gdef\thesisadvisorone#1	{\gdef\@thesisadvisor@one	{#1}}
+\gdef\thesisadvisortwo#1	{\gdef\@thesisadvisor@two	{#1}}
+\gdef\thesisadvisorthree#1	{\gdef\@thesisadvisor@three	{#1}}
+\gdef\thesisauthorpreamble#1	{\gdef\@thesisauthorpreamble	{#1}}
+\gdef\thesisadvisorpreamble#1	{\gdef\@thesisadvisorpreamble	{#1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -233,6 +299,14 @@
     \selectlanguage{english}
   \else
     \selectlanguage{ngerman}
+  \fi
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%   GLOSSARIES                        %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifglossaries
+	\makeglossaries
+	\InputIfFileExists{abbrev/glossary}{}{}
+	\InputIfFileExists{abbrev/acronym}{}{}
   \fi
 }
 
@@ -254,15 +328,13 @@
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%  FRONT MATTERS                      %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % \setcounter{tocdepth}{2}
-  \setcounter{tocdepth}{5}
+  \setcounter{tocdepth}{4}
   \FrontMatter
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%  MAIN MATTERS                       %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \mainmatter
-  % \setcounter{secnumdepth}{2}
-  \setcounter{secnumdepth}{5}
+  \setcounter{secnumdepth}{4}
   %\setsecnumdepth{subsection}% alternative B
   \aliaspagestyle{chapter}{\chapterheadings}
   \pagestyle{\documentheadings}
@@ -284,25 +356,31 @@
   \ifthesis@defaulttitlepages
     \ifthesis@masterthesis
       \include{chapters/titlepages/titlepage}
+      \ifthesis@doublepage \cleardoublepage \fi
     \fi
     \whichlanguage%
       {\include{chapters/titlepages/titlepage_inso_en}}
       {\include{chapters/titlepages/titlepage_inso}}
+    \ifthesis@doublepage \cleardoublepage \fi
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%  TITLEPAGE                          %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \else
     \ifthesis@tutitlepageDE
       \include{chapters/titlepages/titlepage}
+      \ifthesis@doublepage \cleardoublepage \fi
     \fi
     \ifthesis@tutitlepageEN 
       \include{chapters/titlepages/titlepage_en}
+      \ifthesis@doublepage \cleardoublepage \fi
     \fi
     \ifthesis@insotitlepageDE 
       \include{chapters/titlepages/titlepage_inso}
+      \ifthesis@doublepage \cleardoublepage \fi
     \fi
     \ifthesis@insotitlepageEN 
       \include{chapters/titlepages/titlepage_inso_en}
+      \ifthesis@doublepage \cleardoublepage \fi
     \fi
   \fi
   \cleardoublepage
@@ -314,23 +392,23 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \gdef\wrapTUINFDA{
-  \xdef\tuinfthesistitle{\@thesistitle}
-  \xdef\tuinfthesissubtitle{\@thesissubtitle}
-  \xdef\tuinfthesisdate{\@thesisdate}
-  \xdef\tuinfthesistype{\@thesistype} 
-  \xdef\tuinfthesistypeen{\@thesistypeen}
-  \xdef\tuinfthesisdegree{\@thesisdegree} 
-  \xdef\tuinfthesisdegreeen{\@thesisdegreeen}
-  \xdef\tuinfthesiscurriculum{\@thesiscurriculum} 
-  \xdef\tuinfthesiscurriculumen{\@thesiscurriculumen}
-  \xdef\tuinfthesisverfassung{\@thesisauthorpreamble}
-  \xdef\tuinfthesisauthor{\@thesisauthor}
-  \xdef\tuinfthesisauthoraddress{\@thesisauthoraddress}
-  \xdef\tuinfthesismatrikelno{\@thesismatrikelno}
-  \xdef\tuinfthesisbetreuung{\@thesisadvisorpreamble}
-  \xdef\tuinfthesisbetreins{\@thesisadvisor@one}
-  \xdef\tuinfthesisbetrzwei{\@thesisadvisor@two}
-  \xdef\tuinfthesisbetrdrei{\@thesisadvisor@three}
+  \gdef\tuinfthesistitle{\@thesistitle}
+  \gdef\tuinfthesissubtitle{\@thesissubtitle}
+  \gdef\tuinfthesisdate{\@thesisdate}
+  \gdef\tuinfthesistype{\@thesistype} 
+  \gdef\tuinfthesistypeen{\@thesistypeen}
+  \gdef\tuinfthesisdegree{\@thesisdegree} 
+  \gdef\tuinfthesisdegreeen{\@thesisdegreeen}
+  \gdef\tuinfthesiscurriculum{\@thesiscurriculum} 
+  \gdef\tuinfthesiscurriculumen{\@thesiscurriculumen}
+  \gdef\tuinfthesisverfassung{\@thesisauthorpreamble}
+  \gdef\tuinfthesisauthor{\@thesisauthor}
+  \gdef\tuinfthesisauthoraddress{\@thesisauthoraddress}
+  \gdef\tuinfthesismatrikelno{\@thesismatrikelno}
+  \gdef\tuinfthesisbetreuung{\@thesisadvisorpreamble}
+  \gdef\tuinfthesisbetreins{\@thesisadvisor@one}
+  \gdef\tuinfthesisbetrzwei{\@thesisadvisor@two}
+  \gdef\tuinfthesisbetrdrei{\@thesisadvisor@three}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -358,12 +436,35 @@
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%   TABLE OF CONTENTS                 %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \tableofcontents
+  \pdfbookmark{\contentsname}{\contentsname}
+  \tableofcontents*
   \cleardoublepage
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%   Indices                           %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifthesis@indextop
+	\IndexMatter
+  \fi
 }
 
 \gdef\BackMatter{
+  \cleardoublepage
   \@setappendixmarker
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%   Indices                           %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \ifthesis@indextop
+  \else
+	\IndexMatter
+  \fi
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%   BIBLIOGRAPHY                      %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \@makebibliography
+  \@resetappendixmarker
+}
+
+\gdef\IndexMatter{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%   LIST OF FIGURES                   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -373,6 +474,10 @@
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \@makelistoftables
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%   LIST OF LISTINGS                  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \@makelistoflistings
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   %%%   LIST OF ALGORITHM                 %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \@makelistofalgorithm
@@ -380,10 +485,6 @@
   %%%   ABBREVIATIONS                     %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \@makeabbreviations
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %%%   BIBLIOGRAPHY                      %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \@makebibliography
 }
 
 \gdef\AfterTitlePages#1{\gdef\@AfterTitlePages{#1}}
@@ -398,6 +499,8 @@
 \gdef\@AfterListOfFigures{\relax}
 \gdef\AfterListOfTables#1{\gdef\@AfterListOfTables{#1}}
 \gdef\@AfterListOfTables{\relax}
+\gdef\AfterListOfListings#1{\gdef\@AfterListOfListings{#1}}
+\gdef\@AfterListOfListings{\relax}
 \gdef\AfterListOfAlgorithms#1{\gdef\@AfterListOfAlgorithms{#1}}
 \gdef\@AfterListOfAlgorithms{\relax}
 \gdef\AfterAbbreviations#1{\gdef\@AfterAbbreviations{#1}}
@@ -438,54 +541,86 @@
 }
 \def\@makelistoffigures{
   \ifthesis@listoffigures
-    \clearpage
     \listoffigures
+	\cleardoublepage
     \@AfterListOfFigures
+	\cleardoublepage
   \fi
 }
 \def\@makelistoftables{
   \ifthesis@listoftables
-    \clearpage
     \listoftables
+	\cleardoublepage
     \@AfterListOfTables
+	\cleardoublepage
+  \fi
+}
+\def\@makelistoflistings{
+  \ifthesis@listoflistings
+	\cleardoublepage
+	\phantomsection
+	\ifthesis@toc
+		\addcontentsline{toc}{chapter}{\listingslabel}
+	\fi
+    \lstlistoflistings
+    \@AfterListOfListings
+	\cleardoublepage
   \fi
 }
 \def\@makelistofalgorithm{
   \ifthesis@listofalgorithms
-    \clearpage
+	\cleardoublepage
+	\phantomsection
+	\ifthesis@toc
+		\addcontentsline{toc}{chapter}{\algorithmslabel}
+	\fi
     \listofalgorithms
-    \addcontentsline{toc}{chapter}{\algorithmslabel}
+	\cleardoublepage
     \@AfterListOfAlgorithms
+	\cleardoublepage
   \fi
 }
 \def\@makeabbreviations{
   \ifthesis@listofabbrev
-    \clearpage
-    \include{abbrev/abbreviations}
+	\ifglossary
+		\printglossary
+		\cleardoublepage
+	\fi
+	\ifacronym
+		\printglossary[type=\acronymtype, title=\abbreviationslabel,toctitle=\abbreviationslabel]
+		\cleardoublepage
+	\fi
     \@AfterAbbreviations
+	\cleardoublepage
   \fi
 }
 \def\@makebibliography{
   \ifthesis@webreferences
-    \clearpage
-    \printbibliography[type=online,title={\onlinebibliographylabel}]
-    \@AfterOnlineBibliography
-    \clearpage
     \printbibliography[nottype=online]
+	\cleardoublepage
     \@AfterBibliography
+	\cleardoublepage
+    \printbibliography[type=online,title={\onlinebibliographylabel}]
+	\cleardoublepage
+    \@AfterOnlineBibliography
+	\cleardoublepage
   \else
-    \clearpage
     \printbibliography
+	\cleardoublepage
     \@AfterOnlineBibliography
     \@AfterBibliography
+	\cleardoublepage
   \fi
 }
 
 \def\@setappendixmarker{
-  \xdef\leftmark{Appendix}
+  \let\oldrightmark\rightmark
   \xdef\rightmark{}
+  %\xdef\leftmark{Appendix}
 }
-
+\def\@resetappendixmarker{
+  \let\rightmark\oldrightmark
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -498,6 +633,13 @@
 \renewcommand{\chapterheadstart}{\vspace*{0pt}}
 \urlstyle{same}
 
+% Font
+\renewcommand*{\chapnamefont}{\huge\sffamily}
+\renewcommand*{\chaptitlefont}{\Huge\sffamily}
+\renewcommand*{\chapnumfont}{\Huge\sffamily}
+\setsecheadstyle{\Large\sffamily\mdseries}
+\setsubsecheadstyle{\large\sffamily\mdseries}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % LOGO
@@ -509,11 +651,15 @@
 % DEFAULT SETTINGS
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\g@addto@macro\insertchapterspace{\addtocontents{lol}{\protect\addvspace{10pt}}}
+
 \setlength{\skip\footins}{1.8\baselineskip}
 \setlength\footnotemargin{1em}
 \setlength\parskip{0.4\baselineskip}
 \graphicspath{{figures/titlepage/},{figures}}
-\geometry{a4paper, top=2.5cm, bottom=2.5cm}
+%\geometry{a4paper, top=2.5cm, bottom=2.5cm}
+%\geometry{a4paper}
+\geometry{a4paper, bottom=2.5cm, top=3cm, left=3.5cm, right=2.5cm}
 
 % settings of hyperlinks
 \hypersetup{
@@ -529,18 +675,20 @@
 
 % listing settings
 \lstset{
-  float,
-  basicstyle=\small, 
+  basicstyle={\small\singlespacing}, 
   tabsize=2, 
   numbers=left, 
-  numberstyle=\tiny, 
+  numberstyle={\scriptsize\bfseries}, 
   numbersep=5pt, 
-  frame=lines, 
-  breaklines=false,
-  prebreak={\mbox{\ensuremath{\hookleftarrow}}},
-  postbreak={\space\space},
+  %frame=lines, 
+  breakatwhitespace=true,
+  breaklines=true,
+  prebreak={},
+  postbreak={\mbox{\ensuremath{\hookrightarrow}}\space},
   breakindent=0pt,
-  captionpos=b
+  captionpos=b,
+  xleftmargin=16pt,
+  fontadjust,
 }
 
 % Verhinderung von "Schusterjungen"
@@ -556,12 +704,12 @@
 % Headers
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\fancyhf	{} 			% alle Felder löschen
+\fancyhf	{} 			% alle Felder loeschen
 \renewcommand	{\headrulewidth}{0.4pt} % unterdruecken der Linie
 \renewcommand	{\footrulewidth}{0.4pt} % unterdruecken der Linie
 % \setlength	\headsep{2cm}		% header skip
-\fancyhead [L]	{\nouppercase\leftmark}
-\fancyhead [R]	{\nouppercase{\rightmark}}
+\fancyhead [L]	{{\nouppercase\leftmark}}
+\fancyhead [R]	{{\nouppercase{\rightmark}}}
 \fancyfoot [L]	{\parbox[b]{0.7\linewidth}{\@shorttitle}} 
 \fancyfoot [R]	{\pagelabel}{}
 
@@ -573,7 +721,6 @@
 
 \newcommand{\chapterheadings}{fancy}
 \newcommand{\documentheadings}{fancy}
-
 
 \makeoddfoot{plain}{}{\thepage}{}
 \makeevenfoot{plain}{}{\thepage}{}
@@ -590,12 +737,21 @@
 %\def\pagelabel{\whichlanguage{Page~\thepage~of~\pageref{LastPage}}{Seite~\thepage~von~\pageref{LastPage}}}
 \def\pagelabel{\thepage\,/\,\pageref{LastPage}}
 
+\renewcommand{\lstlistlistingname}{\listingslabel}
+\renewcommand{\lstlistingname}{\listingcaptionlabel}
+\renewcommand{\listalgorithmcfname}{\algorithmslabel}
+\renewcommand{\algorithmcfname}{\algorithmcaptionlabel}
+
 \def\onlinebibliographylabel{\whichlanguage{Online References}{Web Referenzen}}
 \def\declarationlabel{\whichlanguage{Statement by Author}{Eidesstattliche Erkl\"arung}}
 \def\acknowledgementslabel{\whichlanguage{Acknowledgements}{Danksagung}}
 \def\abstractlabel{\whichlanguage{Abstract}{Kurzfassung}}
-\def\abbreviationslabel{\whichlanguage{List of Abbreviations}{Abk\"urzungsverzeichnis}}
+\def\abbreviationslabel{\whichlanguage{List of Abbreviations}{Abk\"urzungen}}
+\def\algorithmcaptionlabel{\whichlanguage{Algorithm}{Algorithmus}}
 \def\algorithmslabel{\whichlanguage{List of Algorithms}{Liste der Algorithmen}}
+\def\listingslabel{\whichlanguage{List of Listings}{Quellcodeverzeichnis}}
+\def\listingcaptionlabel{\whichlanguage{Listing}{Quellcode}}
+\def\appendixlabel{\whichlanguage{Appendix}{Anhang}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -605,11 +761,13 @@
 % \let\babel@selectlanguage\selectlanguage
 % \renewcommand{\selectlanguage}[1]{\todo[inline]{#1}\babel@selectlanguage{#1}}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Useful commands
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % EOF

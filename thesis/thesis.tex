@@ -1,11 +1,16 @@
-\documentclass [a4paper,11pt,oneside,german,webreferences,todo]{INSOthesis}
+\documentclass [bachelor,a4paper,11pt,oneside,deutsch,todo,nolistofalgorithms,webreferences,noglossary,listoflistings,acronym]{INSOthesis}
+% change encoding in the document
+%\inputencoding{utf8} % default
+%\inputencoding{latin1} % for windows
 
 \thesistitle{Unterstützung der IT–Sicherheit von VoIP–Infrastrukturen durch die Verwendung spezialisierter VoIP–Firewalls}
 %\thesisshorttitle{Shorttitle of the Thesis}
 %\thesissubtitle{Optional Subtitle} % optional
-\thesisdate{11.11.2011}
+\thesisdate{\today}
 
 % all titles and designations have to be gender-related!
+%\thesistype{Diplomarbeit}{Master's Thesis}
+%\thesisdegree{Diplom-Ingenieurin}{Diplom-Ingenieurin}
 \thesistype{Bakkalaureatsarbeit}{Bachelor's Thesis}
 \thesisdegree{Bakk.tech.}{Bakk.tech.}
 \thesiscurriculum{Wirtschaftsinformatik}{Business Informatics} % your study
@@ -16,9 +21,9 @@
 % advisor
 %\thesisauthorpreamble {Verfasser}
 \thesisadvisorpreamble {Betreuung}
-%\thesisadvisorone {Thomas Grechenig}
+\thesisadvisorone {Thomas Grechenig}
 \thesisadvisortwo {Florian Fankhauser}
-%\thesisadvisorthree {Vorname Nachname}
+%\thesisadvisorthree {Vorname Nachname
 
 % Bibliographie file
 \bibliography{bibliography/references}
@@ -41,8 +46,7 @@
 % \AfterAbbreviations{}
 % \AfterBibliography{}
 
-\includecomment{comment} % to show all comments
-
+\renewcommand\afterchapternum{\hspace{1em}}
 \begin{document}
 
 \maketitle
@@ -50,12 +54,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%   CONTENTS    %%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Auskommentiert!
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\chapter{Introduction}
-%\label{ch:intro}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\input{chapters/introduction}
+%\input{chapters/fundamentals}
+%\input{chapters/problemdescription}
+%\input{chapters/discussion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Einleitung}
@@ -88,33 +90,22 @@
 \input{chapters/ch5}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Fallbeispiel}
-\label{ch:ch6}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{chapters/ch6}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusio und Ausblick}
 \label{ch:ch7}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \input{chapters/ch7}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\chapter{Typographic Design}
-%\label{ch:typo}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\input{chapters/design}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\chapter{Bibliographic Issues}
-%\label{ch:bibliographic}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\input{chapters/bibliographic}
-
-%Eine Abkürzung: \ac{TU}
-\appendix
+%%%%%%%
+\input{chapters/results}
+\input{chapters/conclusion}
 
 % insert bibliography and such stuff
-%\printbibliography
 \BackMatter
+
+\cleardoublepage
+\appendix
+
+\input{chapters/appendix}
+%\input{chapters/bibliographic}
+%\input{chapters/listings}
+
 \end{document}

@@ -20,24 +20,16 @@
    \item Vertraulichkeit (privacy, confidentialty)
   \end{itemize}
   \pagebreak
-  
-   \begin{subsection}{Verfügbarkeit}
-    Verfügbarkeit (availability) meint die Eigenschaft eines Systems, innerhalb eines 
-    bestimmten Zeitraums mit einer bestimmten Wahrscheinlichkeit die vom eingesetzten 
-    System erwarteten Anforderungen zu erfüllen. Die Verfügbarkeit zählt zu den 
-    Qualitätsmerkmalen einer IT-Landschaft.
-    \\
-   \end{subsection}
 
    \label{Integrität}
    \begin{subsection}{Integrität}
-    Unter der Integrität (integrity) von Informationen versteht man die Vollständigkeit und 
-    Korrektheit (Unversehrtheit) der übertragenen Daten auf Sender- und auch Empfängerseite. 
+    Unter der Integrität (integrity) \cite{BSIa} von Informationen versteht man die Vollständigkeit und 
+    Korrektheit (Unversehrtheit) der übertragenen Daten auf Sender- und auch Empfängerseite \cite{BSIInfosi}. 
     Dabei wird davon ausgegangen, dass keine Manipulation der Daten auf dem Transportweg 
     durchgeführt wurden und somit unveränderte Daten verschickt wurden. Um diese 
     Datenintegrität an beiden Kommunikationsenden zu kontrollieren, kann man verschiedene 
     Kontrollmethoden verwenden: \ac{Z.B.} Hash-Verfahren, message authentification codes 
-    oder digitale Signaturen. Um diesen Mechanismus durchführen zu können, sind die Inhalte 
+    oder digitale Signaturen \cite{BSIBegriffe1}. Um diesen Mechanismus durchführen zu können, sind die Inhalte 
     der Daten mit den Kontrollmethoden direkt verknüpft. 
     Durch unzureichende Integritätsprüfung können fehlerhafte Datensätze entstehen: Z.B. 
     Fehlerhafte Produktionen, Falsche Warenlieferungen oder Verbuchungsfehler. 
@@ -45,8 +37,16 @@
     verstärktes Augenmerk gewidment. 
     Im schlimmsten Fall wirken sich Fehler auf Zahlungen und Identitäten aus, welche an 
     nicht berechtigte Personen ausgestellt werden. So kann es beispielsweise zu 
-    Identitätsdiebstahl kommen.
-    \cite{BSIInfosi} \cite{BSIa} \cite{BSIBegriffe1}
+    Identitätsdiebstahl kommen.    
+    \\
+   \end{subsection}
+   
+   \label{Verfügbarkeit}
+   \begin{subsection}{Verfügbarkeit}
+    Verfügbarkeit (availability) meint die Eigenschaft eines Systems, innerhalb eines 
+    bestimmten Zeitraums mit einer bestimmten Wahrscheinlichkeit die vom eingesetzten 
+    System erwarteten Anforderungen zu erfüllen. Die Verfügbarkeit zählt zu den 
+    Qualitätsmerkmalen einer IT-Landschaft.
     \\
    \end{subsection}
 
@@ -60,12 +60,15 @@
     keinerlei Berechtigung von den Daten separiert.
     \\
     \end{subsection}
+    \pagebreak
 
-    \label{Zuverlässigkeit}
-    \begin{subsection}{Zuverlässigkeit}
+   \label{Ergänzung: Zuverlässigkeit}
+    %\begin{subsection}{Zuverlässigkeit}
+   \textbf{Ergänzung: Zuverlässigkeit} \\ \\
      Microsoft definiert sechs Merkmale, welche auf einem System angewandt werden sollen. 
      Diese Qualitätsmerkmale bestehen im Wesentlichen aus den oben genannten Komponenten 
      Verfügbarkeit und Integrität.
+     %\cite{Micro05}
      \begin{enumerate} 
       \item ausfallsicher \\
        Das System kann dem Benutzer auch dann Dienste anbieten, wenn eine interne oder 
@@ -86,10 +89,10 @@
        (Verfügbarkeit)
       \item berechenbar \\
        Das System funktioniert wie erwartet bzw. wie vereinbart. Die Funktionalität von 
-       früher bleibt weiter erhalten. (Verfügbarkeit, Integrität) \\
-      \cite{Micro05}
+       früher bleibt weiter erhalten. (Verfügbarkeit, Integrität) \\      
      \end{enumerate}
-    \end{subsection}
+    %\end{subsection}
+    \pagebreak
   \end{section}
 
  \label{Schutzbedarf}
@@ -114,13 +117,13 @@
   Der Trend zur Speicherung aller Arten von Daten gehört genauso zum alltäglichen Leben 
   wie der Computer selbst. Von Vorratsdatenspeicherung bis hin zu Onlinedatenspeicherung 
   vernetzt über den Globus betrifft das Thema fast jeden Menschen. Selbst der Staat setzt 
-  bei Speicherung von Patientendaten und Steuerdaten auf Informationsvernetzung und - 
-  speicherung. \\
-  \\
+  bei Speicherung von Patientendaten und Steuerdaten auf Informationsvernetzung und - speicherung.   
+  \pagebreak
+  
   Um den teilweise öffentlichen Forderung an Konsistenz und Sicherheit nachkommen zu 
   können, muss der Sicherheitsgrad hoch und der Schutzbedarf gedeckt sein. 
   Schutzbedarf selbst ist nicht quantifizierbar - aber das \ac{BSI} teilt diesen in drei 
-  Kategorien: \\
+  Kategorien: \cite{BSIBedarf} \\
   \begin{enumerate} 
    \item Normal \\
     Die Schadensauswirkungen sind begrenzt und überschaubar.
@@ -128,10 +131,9 @@
     Die Schadensauswirkungen können beträchtlich sein.
    \item Sehr Hoch \\
     Die Schadensauswirkungen können ein existentiell bedrohliches bzw. katastrophales 
-    Ausmaß erreichen. \cite{BSIBedarf}
+    Ausmaß erreichen. 
   \end{enumerate}
-  \pagebreak
-
+  
   Die Sicherheit von Daten und Systemen beschränkt sich heute nur auf technische 
   Gegebenheiten sondern umfasst auch die Sicherheit von organisatorischen und personellen 
   Umgebungsvariablen. Bei diesen ist es enorm wichtig, dass man behutsam und mit großer 
@@ -139,7 +141,7 @@
   mit sensiblen Daten und mit Betriebsvariablen sichergestellt wird. \\
   \\
   Für die heutigen Entwicklungsschritte in der Vernetzungstechnologie sind folgende 
-  Faktoren prägend: \\
+  Faktoren prägend: \cite{BSIa} \\
   
   \begin{enumerate} 
    \item Vernetzung \\
@@ -164,7 +166,7 @@
  	auf verschiedene Teams an verschiedenen Orten der Welt aufteilen.
  	Somit ergeben sich nicht gegebenenfalls nicht nur finanzielle sondern auch organisatorische 
  	Vorteile.  \\   
- 	\cite{BSIa} 	
+ 	 	
  	
    \end{enumerate}
  \end{section}
@@ -182,20 +184,34 @@
 	Einerseits dienen BSI-Standards zur fachlichen Unterstützung von Anwendern der Informationstechnik. 
 	Das erleichtert die sichere Nutzung von Informationstechnik, da auf bewährte Methoden, Prozesse 
 	oder Verfahren zurückgegriffen werden kann.
-  \cite{BSIITkat}
-  
-  \pagebreak
+  \cite{BSIITkat}  
+  %\pagebreak
   Auszug auf den Grundschutzstandards:
   \begin{enumerate}
-	\item BSI-Standard 100-1: Managementsysteme für Informationssicherheit (ISMS) \\
-	\item BSI-Standard 100-2: IT-Grundschutz-Vorgehensweise \\
-	\item BSI-Standard 100-3: Risikoanalyse auf der Basis von IT-Grundschutz \\
-	\item BSI-Standard 100-4: Notfallmanagement \\
+	\item BSI-Standard 100-1 \cite{BSIGSStd}: \ac{ISMS} \\
+		Der vorliegende BSI-Standard definiert allgemeine Anforderungen an ein ISMS.
+	\item BSI-Standard 100-2 \cite{BSIGSStd}: IT-Grundschutz-Vorgehensweise \\
+		Die IT-Grundschutz-Vorgehensweise beschreibt Schritt für Schritt, 
+		wie ein Managementsystem für Informationssicherheit in der Praxis aufgebaut 
+		und betrieben werden kann. Die Aufgaben des Sicherheitsmanagements und 
+		der Aufbau von Organisationsstrukturen für Informationssicherheit sind dabei wichtige Themen.
+	\item BSI-Standard 100-3 \cite{BSIGSStd}: Risikoanalyse auf der Basis von IT-Grundschutz \\
+		Die IT-Grundschutz-Kataloge des BSI enthalten Standard-Sicherheitsmaßnahmen 
+		aus den Bereichen Organisation, Personal, Infrastruktur und Technik, 
+		die bei normalen Sicherheitsanforderungen in der Regel angemessen und 
+		ausreichend zur Absicherung von typischen Geschäftsprozessen und Informationsverbünden sind.
+	\item BSI-Standard 100-4 \cite{BSIGSStd}: Notfallmanagement \\
+		Mit dem BSI-Standard 100-4 wird ein systematischer Weg aufgezeigt, 
+		ein Notfallmanagement in einer Behörde oder einem Unternehmen aufzubauen, 
+		um die Kontinuität des Geschäftsbetriebs sicherzustellen. Aufgaben eines Notfallmanagements sind daher, 
+		die Ausfallsicherheit zu erhöhen und die Institution auf Notfälle und Krisen adäquat vorzubereiten, 
+		damit die wichtigsten Geschäftsprozesse bei Ausfall schnell wieder aufgenommen werden können.
   \end{enumerate}
  \end{section}
  
  \label{Aufbau Grundschutzkataloge}
- \begin{section} {Aufbau}
+ %\begin{section} {Aufbau}
+ \textbf{Aufbau}
 	In den IT-Grundschutz-Katalogen werden Standard-Sicherheitsmaßnahmen für typische Geschäftsprozesse, 
 	Anwendungen und IT-Systeme empfohlen. Ziel des IT-Grundschutzes ist es, 
 	einen angemessenen Schutz für alle Informationen einer Institution zu erreichen. 
@@ -204,13 +220,15 @@
 	sondern liefern an vielen Stellen bereits höherwertige Sicherheit. \\
 	Die IT-Grundschutzkataloge sind als Informationssystem-Management organisiert und 
 	bestehen aus Bausteinen, welche dem Ganzen eine Struktur geben.
- \end{section}
+ %\end{section}
  \todo[inline]{Quelle hinzufügen}
+ \pagebreak 
  
  \label{Bausteine}
- \begin{section} {Bausteine}
- 	Wie schon vorher erwähnt, bestehen die IT-Grundschutzkataloge aus Bausteinen.
- 	Modular kann man sich damit für sich das jeweilige Risikoeinschätzung mit Maßnahmenempfehlungen  zusammenbauen.
+ %\begin{section} {Bausteine}
+ \textbf{Bausteine} \\
+ 	Wie in Kapitel 2.4 beschrieben, bestehen die IT-Grundschutzkataloge aus Bausteinen.
+ 	Modular kann man sich damit die jeweilige Risikoeinschätzung mit Maßnahmenempfehlungen zusammenbauen.
  	Bausteine werden wie folgt kategorisiert:
  	
  	\begin{itemize}
@@ -219,8 +237,29 @@
  		\item B 3: IT-Systeme
  		\item B 4: Netze
  		\item B 5: Anwendungen
- 	\end{itemize}
+ 	\end{itemize} 
+ 	
  	\todo[inline]{Quelle hinzufügen}
+ 	\begin{figure}[htbp]
+		\centering
+		\fbox{
+    		\includegraphics[width=0.8\textwidth,natwidth=832,natheight=832]{figures/Bausteinzuordnung_BSI_Grundschutzkataloge.jpg}
+  		}
+		\caption[Bausteinzuordnung-BSI-Grundschutzkataloge]{Bausteinzuordnung-BSI-Grundschutzkataloge}
+		\label{Bausteinzuordnung-BSI-Grundschutzkataloge}
+		\todo[inline]{Quelle Wikipedia hinzufügen}
+	\end{figure}
+	\pagebreak
+	
+	\begin{figure}[htbp]
+		\centering
+		\fbox{
+    		\includegraphics[width=0.8\textwidth,natwidth=832,natheight=218]{figures/Lebenszyklus_BSI_Grundschutzkataloge.jpg}
+  		}
+		\caption[Lebenszyklus-BSI-Grundschutzkataloge]{Lebenszyklus-BSI-Grundschutzkataloge}
+		\label{Lebenszyklus-BSI-Grundschutzkataloge}
+		\todo[inline]{Quelle Wikipedia hinzufügen}
+	\end{figure}
  	
  	Des Weiteren finden sich Bausteine in Gefährdungskatalogen, welche verschiedene Gefährdungsszenarien 
  	beschreiben und wie folgst lauten:
@@ -232,10 +271,18 @@
  		\item G 4: Technisches Versagen
  		\item G 5: Vorsätzliche Handlungen
  	\end{itemize}
+ 	Die Gefährdungskataloge gehen näher auf die möglichen Gefährdungen für IT-Systeme ein.
+ 	Diese Gefährdungskataloge folgen dem allgemeinen Aufbau nach Schichten.
+ 	Zur Erstellung des Grundschutzes ist nach Aussagen des BSI das in diesen Katalogen 
+ 	zusammengestellte Wissen nicht unbedingt notwendig, es fördert jedoch das Verständnis 
+ 	für die Maßnahme sowie die Wachsamkeit der Verantwortlichen. Die einzelne Gefahrenquelle 
+ 	ist in einem kurzen Text beschrieben und anschließend werden Beispiele für Schadensfälle, 
+ 	die durch diese Gefahrenquelle auslösen kann, gegeben.
  	\todo[inline]{Quelle hinzufügen}
+ 	\todo[inline]{Quelle=Wikipedia hinzufügen}
  	
  	Welche Maßnahmen und Normen einzuhalten sich um das Sicherheitslevel zu erhöhen, beschreiben die 
- 	nachfolgenden sechs Punkte im Maßnahmenkatalog: 
+ 	nachfolgenden sechs Punkte in Maßnahmenkatalogen: 
  	\begin{itemize}
  		\item M 1: Infrastruktur
  		\item M 2: Organisation
@@ -244,20 +291,113 @@
  		\item M 5: Kommunikation
  		\item M 6: Notfallvorsorge
  	\end{itemize}
+ 	Die zur Umsetzung des Grundschutzes notwendigen Maßnahmen sind in 
+ 	Maßnahmenkatalogen zusammengefasst. So werden Maßnahmen, 
+ 	die für mehrere System-Komponenten angemessen sind, nur einmal zentral beschrieben.
+ 	Hierbei werden auch Schichten zur Strukturierung der einzelnen Maßnahmengruppen genutzt.
+ 	In der jeweiligen Maßnahmenbeschreibung sind zunächst Verantwortliche für die Initiierung und 
+ 	die Umsetzung der Maßnahme genannt. Es folgt eine ausführliche Beschreibung der Maßnahme. 
+ 	Abschließend werden Kontrollfragen zur korrekten Umsetzung genannt.
+ 	Bei der Umsetzung der Maßnahmen sollte zunächst überprüft werden, 
+ 	ob eine Anpassung dieser auf den jeweiligen Betrieb notwendig ist. 
+ 	Eine genaue Dokumentation solcher Anpassungen ist zur späteren Nachvollziehbarkeit sinnvoll. 
+ 	Am Ende der Maßnahmen gibt es seit der 10. Ergänzungslieferung sogenannte Prüffragen, 
+ 	die die wesentlichen Aspekte einer Maßnahme nochmal aufgreifen und somit eine Art Checkliste darstellen,
+ 	ob diese auch umgesetzt sind.
+ 	\todo[inline]{Quelle=Wikipedia hinzufügen}
  	\todo[inline]{Quelle hinzufügen}
  	
- \end{section}
+ 	Weiters gibt der IT-Grundschutzkatalog \todo[inline]{Quelle hinzufügen} wertvolle Hinweise, 
+ 	um theoretisch und praktisch einen effektiven Sicherheitsprozess zu gewährleisten.
+ %\end{section}
 
  \pagebreak
  \label{Firewalls}
  \begin{section}{Firewalls}
-
+	Das BSI hat sicherheitsspezifische Aspekte für Firewalls beschrieben.
+	Sicherheitsspezifische Funktionen sind alle Funktionen einer Firewall, 
+	die direkt zum Erreichen der Sicherheitsziele beitragen. \\
+	
+	Sicherheitsrelevante Funktionen tragen zum sicheren Funktionieren der Firewall 
+	bei und leisten häufig nicht nur Dienste für die sicherheitsspezifischen Funktionen, 
+	sondern auch für nicht sicherheitsbezogene Funktionen. Für gewöhnlich hängen 
+	sicherheitsspezifische Funktionen vom korrekten Betrieb der sicherheitsrelevanten Funktionen ab. 
+	Sicherheitsrelevante Funktionen sind alle Bestandteile, die für die Ausführung der 
+	sicherheitsspezifischen Funktionen benötigt werden, also z.B. 
+	Teile des Betriebssystems wie Netzwerktreiber, Bibliotheksfunktionen o.Ä. 
+	Sie müssen also auch gemäß der oben aufgeführten Evaluationsstufen geprüft werden, 
+	wobei auch Wechselwirkungen zu berücksichtigen sind! 
+	Zur Erreichung einer größtmöglichen Vereinfachung und Standardisierung sollten die 
+	sicherheitsrelevanten Funktionen über eine kleine Anzahl von genau definierten Schnittstellen 
+	angesprochen werden können.
+	Die sicherheitsspezifischen Funktionen einer Firewall lassen sich wie folgt unterteilen:
+	\begin{itemize}
+		\item Funktionen zum Schutz gegen direkte Angriffe
+		\item Funktionen zum Schutz des zu sichernden Netzes gegen Angriffe aus dem unsicheren Netz
+	\end{itemize}
+	\todo[inline]{Quelle hinzufügen}
+	\pagebreak
+	
   \label{Sicherheitsdienste einer Firewall}
   \begin{subsection}{Sicherheitsdienste einer Firewall}
+  	Auf dem Firewall-System werden Sicherheitsmechanismen implementiert, die diesen Übergang 
+  	sicher und beherrschbar machen. Dazu analysiert das Firewall-System die Kommunikationsdaten, 
+  	kontrolliert die Kommunikationsbeziehungen und Kommunikationspartner, 
+  	reglementiert die Kommunikation nach einer Sicherheitspolitik, protokolliert sicherheitsrelevante 
+  	Ereignisse und alarmiert bei starken Verstößen den Security-Administrator. \\
+  	Nachfolgende Grafik zeigt die exemplarische Einbindung einer Firewall in ein Netzwerk und die Platzierung einer Firewall.
+  	
+  	\begin{figure}[htbp]
+		\centering
+		\fbox{
+    		\includegraphics[width=0.8\textwidth,natwidth=514,natheight=556]{figures/Firewall_Nw.pdf}
+    		%[height=60mm, width=100mm]
+    		%\centering\includegraphics[scale=15%]{figures/Firewall_Nw.jpg}
+  		}
+		\caption[Firewall:Network]{Firewall-Network}
+		\label{Firewall_Network}
+		\todo[inline]{Quelle hinzufügen}
+	\end{figure}
   \end{subsection}
- 
+  \pagebreak
+  
   \label{Firewall-Konzepte}
   \begin{subsection}{Firewall-Konzepte}
+  	Ein Firewall-System stellt den "Common Point of Trust" für den Übergang zwischen 
+  	unterschiedlichen Netzen dar, d.h., der einzige Weg ins interne Netz führt kontrolliert über das Firewall-System.
+  	\\
+  	Firewall-Systeme werden verwendet, um sich an unsichere Netze wie z.B. das Internet anzukoppeln 
+  	oder auch, um das eigene Netz zu strukturieren und hier 
+  	Sicherheitsdomänen mit unterschiedlichem Schutzbedarf zu schaffen.
+  	\todo[inline]{Quelle hinzufügen}
+  	
+  	\textbf{Vorteile des Common-Point-of-Trust-Konzeptes}
+  	\begin{itemize}
+  		\item Kosten:
+  			Die Realisierung von Sicherheitsmechanismen auf einem zentralen System ist wesentlich einfacher jene 
+  			auf jedem einzelnen Rechner.
+  		\item Möglichkeiten durch Sicherheitspolitik:
+  			Durch eine zentrale Steuerung können die Benutzer einheitlich authentifiziert werden und womöglich 
+  			mit kryptographischen Funktionen erweitert werden.
+  		\item Abschottung:
+  			Durch diese Konzeptionierung kann das zu schützende Netzwerk von unsicheren Netzwerken getrennt werden.
+  			Firewall-Systeme können Angriffen entgegenwirken.
+  	\end{itemize}
+  	\todo[inline]{Quelle hinzufügen}
+  	
+  	\textbf{Allgemeine Ziele von Firewall-Systemen}
+  	\begin{itemize}
+  		\item Zugangskontrolle:
+  			Auf Daten-, Benutzer- und Netzwerkebene kann die Sicherheit überprüft und gewährleistet werden, 
+  			damit ein sicherer Datenaustausch möglich ist.
+  		\item Rechteverwaltung:
+  			Mittels Protokollen und Diensten kannst festgelegt werden, wann für wen eine Kommunikation über das 
+  			Firewall-System erlaubt ist.
+  		\item Vertraulichkeit:
+  			Die interne Struktur wird hinter dem Schutzsystem verborgen und Nachrichten werden nie im Klartext 
+  			übermittelt.
+  	\end{itemize}
+  	\todo[inline]{Quelle hinzufügen}
   \end{subsection}
  \end{section}
 \pagebreak

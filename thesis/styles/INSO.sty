@@ -19,7 +19,7 @@
 \usepackage{amssymb} % \centerdot
 
 % load english and ngerman
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{}
 %\usepackage[ngerman,english]{babel}
 
 % search for graphics in ./figures
@@ -58,19 +58,19 @@
 \def\inso@squarebullet{\raisebox{0.4ex}{\thesistitlefontLarge $\centerdot$}}
 
 \def\inso@titlingfoot{%
-  %\centering%
-  %\rule{\inso@footwidth}{0.5pt}
-  %
-  %\begin{minipage}[t][1cm][t]{\inso@footwidth}%
-  %  \sffamily%
-  %  \centering%
-  %  \thesistitlefontnormalsize%
-  %  %
-  %  Technische Universit\"{a}t Wien 
-  %  
-  %  A-1040 Wien \inso@squarebullet{} Karlsplatz 13 \inso@squarebullet{}
-  %  Tel. +43-1-58801-0 \inso@squarebullet{} www.tuwien.ac.at%
-  %\end{minipage}%
+  \centering%
+  \rule{\inso@footwidth}{0.5pt}
+  
+  \begin{minipage}[t][1cm][t]{\inso@footwidth}%
+    \sffamily%
+    \centering%
+    \thesistitlefontnormalsize%
+    %
+    Technische Universit\"{a}t Wien, Forschungsgruppe INSO
+    
+    A-1040 Wien \inso@squarebullet{} Wiedner Hauptstr. 76/2/2 \inso@squarebullet{}
+    Tel. +43-1-587~21~97 \inso@squarebullet{} www.inso.tuwien.ac.at%
+  \end{minipage}%
 }
 \def\inso@titlinghead{%
   \centering%

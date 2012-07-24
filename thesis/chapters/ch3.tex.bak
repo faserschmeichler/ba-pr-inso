@@ -1,0 +1,89 @@
+\label{Grundlagen von VoIP}
+% \begin{section}{Grundlagen von VoIP}
+	Allgemein gesprochen beschreibt Voice over IP die Telefonie basierend auf dem \ac{TCP/IP} Protokoll im Internet.
+	
+	Mit VoIP werden mehrere Begriffe verbunden; z.B.:
+	\begin{itemize}
+		\item \ac{IP}-Telefonie
+		\item Skype
+		\item \ac{LAN}-Telefonie
+		\item \ac{SIP}-Telefonie
+		\item Internettelefonie
+	\end{itemize}
+
+ \label{Geschichte der Telefonie}
+ \begin{section}{Geschichte der Telefonie}
+ 	Kommunikation ist ein Grundbedürfnis aller Menschen. Allein wie die Information übermittelt wird, 
+ 	hat sich im Laufe der Geschichte immer wieder geändert. 
+ 	Seit Jahrzehnten ist das Telefon fester Bestandteil unseres Lebens. 
+ 	Der Griff zum Hörer, der Gespräche mit Menschen rund um die Welt ermöglicht, 
+ 	ist heute eine Selbstverständlichkeit. Vor 12 Jahren, 
+ 	als die Geschichte der Telefonie in Österreich begann, war das Telefon jedoch eine sensationelle Innovation. \\
+ 	\\
+ 	Im Juni des Jahres 1881 erteilte das k.k. Handelsministerium der "Wiener Privat-Telegraphen-Gesellschaft" 
+ 	eine "Concession" zum Betrieb von Telefonanlagen. Zwar erscheint die Netzabdeckung aus 
+ 	heutiger Sicht wenig beeindruckend, die Telefonanlagen durften lediglich in einem Umkreis 
+ 	von 15 Kilometern rund um den Wiener "Stephansthurm" betrieben werden. 
+ 	Schon drei Monate später wurde der Betrieb der Telefonanlagen auf ganz Wien ausgeweitet, 
+ 	im Dezember 1881 konnte in der Wiener Friedrichstraße die erste Telefonzentrale Österreichs 
+ 	eröffnet werden. Mit 154 Teilnehmern, darunter Zeitungen, Großunternehmer und Banken, 
+ 	wurde der Netzbetrieb gestartet. \\
+ 	\\
+ 	Im Jahr 1867 entwickelte Alexander Graham Bell eine Versuchsanordnung, 
+ 	bei der Schallwellen der menschlichen Sprache eine Membran vibrieren ließen. 
+ 	Dadurch entstanden in einer Drahtspule Stromschwankungen, 
+ 	die nach der Übertragung auf ein gleichartiges Gerät wieder Töne hervorbrachten. 
+ 	Bell erhielt für seine Erfindung die Patentnummer 174.465 und war damit nur um zwei Stunden 
+ 	schneller als der Amerikaner Elisha Gray. Damals konnte noch niemand ahnen, 
+ 	dass die Erfindung zu einem der einträglichsten Patente aller Zeiten werden sollte. 
+ 	Im Jahr 1876 wurde über den "Bellschen Sprachtelegraphen" schließlich zwischen 
+ 	Boston und Cambridge das erste Ferngespräch der Welt geführt.
+ 	\pagebreak
+ 	
+ 	Im Jahre 1910 kamen schließlich die ersten Telefone, die mit einer Wählscheibe und 
+ 	einem Hörer ausgestattet waren, auf den Markt. Zugleich bereitete die 
+ 	Post- und Telegraphenverwaltung mit der Umstellung der Verbindungen innerhalb eines Ortes 
+ 	vom handvermittelten Dienst auf Selbstwählverkehr eine kleine Revolution vor. 
+ 	Nun konnten die Teilnehmer erstmals ihre Gesprächspartner innerhalb eines Ortes 
+ 	direkt und ohne Vermittlungshilfe erreichen. Schon in den Anfangsjahren der Telefonie 
+ 	gab es Verbindungen in die österreichischen Kronländer. Allerdings wurden diese Leitungen 
+ 	bis etwa 1920 ausnahmslos über Freileitungstrassen geführt. \\
+
+ 	\cite{stadtwien2012Telefon}
+ 	\pagebreak
+ \end{section}
+ 
+ \label{Einführung in VoIP}
+ \begin{section}{Einführung in VoIP}
+ 	Mit der Thematik Voice over IP hat die Telefonie einen riesen Schritt vorwärts getan.
+ 	Durch die starke Verbreitung von Smartphones haben sich noch weitere Geschäftsfelder für 
+ 	die Internettelefonie hinzugekommen. Internationale Firmen haben diese Chancen längst erkannt 
+ 	und stellen sich dementsprechend auf. \\
+ 	Basierend auf den Protokollen \ac{IP}, \ac{TCP} und \ac{UDP} lässt sich VoIP leicht in bestehende 
+ 	Infrastruktur und Dienste integrieren.
+ 	Im nächsten Kapitel werden die technischen Details noch näher erläutert. \\
+ 	
+ \end{section}
+ 
+ \label{Technische Grundlagen einer VoIP-Infrastruktur}
+ \begin{section}{Technische Grundlagen einer VoIP-Infrastruktur}
+
+ \label{Protokolle und Standards}
+ \begin{subsection}{Protokolle und Standards}
+ \end{subsection}
+ 
+ \label{Anforderungen an die technische Infrastruktur}
+ \begin{subsection}{Anforderungen an die technische Infrastruktur}
+ \end{subsection}
+ 
+ \label{Komponenten}
+ \begin{subsection}{Komponenten}
+ \end{subsection}
+ 
+ \end{section}
+ 
+ \label{Fallbeispiel: Exemplarischer Aufbau einer VoIP-Infrastruktur}
+ \begin{section}{Fallbeispiel: Exemplarischer Aufbau einer VoIP-Infrastruktur}
+ \end{section}
+ 
+% \end{section}

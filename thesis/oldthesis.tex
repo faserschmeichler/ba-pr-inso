@@ -1,0 +1,75 @@
+\documentclass [bachelor,noassistance,a4paper,11pt,oneside,deutsch,todo,webreferences,noglossary,listoflistings,acronym,nolistofalgorithms]{INSOthesis}
+% change encoding in the document
+%\inputencoding{utf8} % default
+%\inputencoding{latin1} % for windows
+
+\thesistitle{Unterstützung der IT–Sicherheit von VoIP–Infrastrukturen durch die Verwendung spezialisierter VoIP–Firewalls}
+%\thesisshorttitle{Shorttitle of the Thesis}
+%\thesissubtitle{Optional Subtitle} % optional
+\thesisdate{\today}
+
+% all titles and designations have to be gender-related!
+%\thesistype{Diplomarbeit}{Master's Thesis}
+%\thesisdegree{Diplom-Ingenieurin}{Diplom-Ingenieurin}
+\thesistype{Bakkalaureatsarbeit}{Bachelor's Thesis}
+\thesisdegree{Bakk.tech.}{Bakk.tech.}
+\thesiscurriculum{Wirtschaftsinformatik}{Business Informatics} % your study
+\thesisauthor{Philipp Schaden} % your name
+\thesisauthoraddress{Aschau 93, 7432 Oberschützen} % your address
+\thesismatrikelno{0626698} % your registration number
+
+% advisor
+%\thesisauthorpreamble {Verfasser}
+\thesisadvisorpreamble {Betreuung}
+%\thesisadvisorone {Thomas Grechenig}
+\thesisadvisortwo {Florian Fankhauser}
+%\thesisadvisorthree {Vorname Nachname
+
+% Bibliographie file
+\bibliography{bibliography/references}
+
+\hypersetup{
+  %colorlinks=false % enable and disable frames arround links
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Can be used to add additional informations
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \AfterTitlePages{}
+% \AfterDeclaration{}
+% \AfterAcknowledgements{}
+% \AfterAbstract{}
+% \AfterListOfFigures{}
+% \AfterListOfTables{}
+% \AfterAbbreviations{}
+% \AfterBibliography{}
+
+\renewcommand\afterchapternum{\hspace{1em}}
+\begin{document}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%   CONTENTS    %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chapters/introduction}
+\input{chapters/fundamentals}
+\input{chapters/problemdescription}
+\input{chapters/results}
+\input{chapters/discussion}
+\input{chapters/conclusion}
+
+% insert bibliography and such stuff
+\BackMatter
+
+\cleardoublepage
+\appendix
+
+\input{chapters/appendix}
+\input{chapters/bibliographic}
+\input{chapters/listings}
+
+\end{document}

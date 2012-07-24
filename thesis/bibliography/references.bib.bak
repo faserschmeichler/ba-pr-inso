@@ -1,244 +1,357 @@
-%% This BibTeX bibliography file was created using BibDesk.
-%% http://bibdesk.sourceforge.net/
+% This file was created with JabRef 2.8.1.
+% Encoding: UTF8
 
+@INPROCEEDINGS{Abdelnur:2006:voipass,
+  author = {Abdelnur, H. and Cridlig, V. and State, R. and Festor, O.},
+  title = {VoIP security assessment: methods and tools},
+  booktitle = {Proc. 1st IEEE Workshop VoIP Management and Security},
+  year = {2006},
+  pages = {29--34},
+  date-modified = {2011-09-15 09:12:20 +0000},
+  owner = {Philipp Schaden},
+  timestamp = {2011.09.15}
+}
 
-%% Created for Philipp Schaden at 2012-03-20 11:52:06 +0100 
+@INPROCEEDINGS{Anwar:2006:despatt,
+  author = {Anwar, Z. and Yurcik, W. and Johnson, R. E. and Hafiz, M. and Campbell,R.H.},
+  title = {Multiple design patterns for voice over IP (VoIP) security},
+  booktitle = {Proc. 25th IEEE Int. Performance, Computing, and Communications Conf.IPCCC 2006},
+  year = {2006},
+  date-modified = {2011-09-15 09:12:33 +0000},
+  owner = {Philipp Schaden},
+  timestamp = {2011.09.15}
+}
 
+@OTHER{BSIBedarf,
+  author = {BSI},
+  date-added = {2011-12-20 23:14:18 +0000},
+  date-modified = {2011-12-20 23:14:41 +0000},
+  lastchecked = {2012-07-11},
+  keywords = {2011},
+  title = {Schutzbedarfskategorien},
+  url = {https://www.bsi.bund.de/cln_156/DE/Themen/weitereThemen/WebkursITGrundschutz/Schutzbedarfsfeststellung/Schutzbedarfskategorien/schutzbedarfskategorien_node.html}
+}
 
-%% Saved with string encoding Unicode (UTF-8) 
+@OTHER{BSIBegriffe1,
+  author = {BSI},
+  date-added = {2011-12-20 23:11:46 +0000},
+  date-modified = {2011-12-20 23:12:30 +0000},
+  lastchecked = {2012-07-11},
+  title = {BSI Begriffsdefinitionen},
+  url = {https://www.bsi.bund.de/cln_183/sid_C6E2892F31C8991A1AAD7D06780EC8A8/ContentBSI/grundschutz/kataloge/glossar/04.html}
+}
 
+@OTHER{BSIInfosi,
+  author = {BSI},
+  date-added = {2011-12-20 23:12:43 +0000},
+  date-modified = {2011-12-20 23:13:11 +0000},
+  lastchecked = {2012-07-11},
+  title = {IT-Grundschutz - Basis f{\"u}r Informationssicherheit},
+  url = {https://www.bsi.bund.de/DE/Themen/weitereThemen/ITGrundschutzKataloge/Inhalt/Allgemeines/Einstiegskapitel/einstiegskapitel_node.html}
+}
 
+@OTHER{BSIITkat,
+  author = {BSI},
+  date-added = {2011-12-20 23:19:39 +0000},
+  date-modified = {2011-12-20 23:20:08 +0000},
+  lastchecked = {2012-07-11},
+  title = {IT-Grundschutz-Kataloge},
+  url = {https://www.bsi.bund.de/cln_174/DE/Themen/weitereThemen/ITGrundschutzKataloge/itgrundschutzkataloge_node.html}
+}
 
-@url{BSIITkat,
-	Author = {BSI},
-	Date-Added = {2011-12-20 23:19:39 +0000},
-	Date-Modified = {2011-12-20 23:20:08 +0000},
-	Lastchecked = {2011},
-	Title = {IT-Grundschutz-Kataloge},
-	Urldate = {https://www.bsi.bund.de/cln_174/DE/Themen/weitereThemen/ITGrundschutzKataloge/itgrundschutzkataloge_node.html}}
+@OTHER{BSIKat1,
+  author = {BSI},
+  date-added = {2011-12-20 23:01:33 +0000},
+  date-modified = {2011-12-20 23:04:35 +0000},
+  lastchecked = {2012-07-11},
+  title = {Anwendungsweisen der IT-Grundschutz-Kataloge},
+  url = {https://www.bsi.bund.de/cln_174/ContentBSI/grundschutz/kataloge/allgemein/einstieg/01001.html#1_4}
+}
 
-@url{BSIBedarf,
-	Author = {BSI},
-	Date-Added = {2011-12-20 23:14:18 +0000},
-	Date-Modified = {2011-12-20 23:14:41 +0000},
-	Keywords = {2011},
-	Title = {Schutzbedarfskategorien},
-	Urldate = {https://www.bsi.bund.de/cln_156/DE/Themen/weitereThemen/WebkursITGrundschutz/Schutzbedarfsfeststellung/Schutzbedarfskategorien/schutzbedarfskategorien_node.html}}
+@OTHER{BSIBegriffe1,
+  author = {BSI},
+  date-added = {2011-12-20 23:11:46 +0000},
+  date-modified = {2011-12-20 23:12:30 +0000},
+  lastchecked = {2012-07-11},
+  title = {BSI Begriffsdefinitionen},
+  url = {https://www.bsi.bund.de/cln_183/sid_C6E2892F31C8991A1AAD7D06780EC8A8/ContentBSI/grundschutz/kataloge/glossar/04.html}
+}
 
-@url{BSIInfosi,
-	Author = {BSI},
-	Date-Added = {2011-12-20 23:12:43 +0000},
-	Date-Modified = {2011-12-20 23:13:11 +0000},
-	Title = {IT-Grundschutz - Basis f{\"u}r Informationssicherheit},
-	Urldate = {https://www.bsi.bund.de/DE/Themen/weitereThemen/ITGrundschutzKataloge/Inhalt/Allgemeines/Einstiegskapitel/einstiegskapitel_node.html}}
+@ARTICLE{Butcher:2007:SecChall,
+  author = {Butcher, D. and X. Li and J. Guo},
+  title = {Security Challenge and Defense in VoIP Infrastructures},
+  journal = IEEE,
+  journaltitle = IEEE,
+  year = {2007},
+  volume = {37},
+  pages = {1152--1162},
+  number = {6},
+  date-modified = {2012-03-19 23:02:48 +0000},
+  owner = {Philipp Schaden},
+  timestamp = {2011.09.15}
+}
 
-@url{BSIBegriffe1,
-	Author = {BSI},
-	Date-Added = {2011-12-20 23:11:46 +0000},
-	Date-Modified = {2011-12-20 23:12:30 +0000},
-	Lastchecked = {2009},
-	Title = {BSI Begriffsdefinitionen},
-	Urldate = {https://www.bsi.bund.de/cln_183/sid_C6E2892F31C8991A1AAD7D06780EC8A8/ContentBSI/grundschutz/kataloge/glossar/04.html}}
+@ARTICLE{CaoWang:2009:DevLab,
+  author = {X. Cao and Y. Wang and A. Caciula and Y. Wang},
+  title = {Developing a multifunctional network laboratory for teaching and	research},
+  journal = {SIGITE '09: Proceedings of the 10th ACM confer- ence on SIG-information technology education},
+  year = {2009},
+  pages = {155 - 160},
+  number = {2009},
+  date-added = {2011-09-15 09:10:48 +0000},
+  date-modified = {2011-11-22 12:23:42 +0000}
+}
 
-@url{BSIKat1,
-	Author = {BSI},
-	Date-Added = {2011-12-20 23:01:33 +0000},
-	Date-Modified = {2011-12-20 23:04:35 +0000},
-	Lastchecked = {2009},
-	Title = {Anwendungsweisen der IT-Grundschutz-Kataloge},
-	Urldate = {https://www.bsi.bund.de/cln_174/ContentBSI/grundschutz/kataloge/allgemein/einstieg/01001.html#1_4}}
+@INPROCEEDINGS{Coulibaly:2010:secvoipb,
+  author = {Coulibaly, E. and L. Liu},
+  title = {Security of Voip networks},
+  booktitle = {Proc. 2nd Int Computer Engineering and Technology (ICCET) Conf},
+  year = {2010},
+  volume = {3},
+  date-modified = {2012-03-19 23:01:35 +0000},
+  owner = {Philipp Schaden},
+  timestamp = {2011.09.15}
+}
 
-@book{ois:fischer,
-	Abstract = {
-			Praxisnah und verst{\"a}ndlich informiert der {\"U}berblick {\"u}ber die aktuellen Sicherheitsaspekte der Internet-Kommunikation. 
-			Die Autoren behandeln die theoretischen Grundlagen verschiedener Sicherheitsstrategien und zeigen die Risiken bei 
-			der Anwendung bzw. Implementierung auf. Die beschriebenen Sicherheitstools orientieren sich am Schichtenmodell der 
-			ISO/OSI, die Sicherheitsrelevanz der verschiedenen Schichten wird analysiert. Security-Aspekte bei der IP-Telefonie 
-			und beim Internet-Banking runden das Buch ab.
-	},
-	Author = {S. Fischer and C. Rensing and U. Roedig},
-	Date-Modified = {2012-03-19 23:02:26 +0000},
-	Month = jan,
-	Note = {ISBN 3-540-66814-4.},
-	Publisher = {Springer Verlag},
-	Title = {{Open Internet Security - Von den Grundlagen zu den Anwendungen}},
-	Year = {2000}}
+@BOOK{eckert:2009:sicherheit,
+  title = {IT-Sicherheit: Konzepte - Verfahren - Protokolle},
+  publisher = {Oldenbourg Wissensch.Vlg},
+  year = {2009},
+  author = {Eckert, C.},
+  date-added = {2011-09-14 20:49:14 +0000},
+  date-modified = {2011-09-14 20:49:25 +0000},
+  isbn = {9783486589993},
+}
 
-@url{Micro05,
-	Author = {Microsoft Deutschland GmbH},
-	Date-Added = {2011-12-20 22:39:48 +0000},
-	Date-Modified = {2011-12-20 22:42:08 +0000},
-	Lastchecked = {2005},
-	Title = {Die 6 Merkmale der Zuverl{\"a}ssigkeit},
-	Urldate = {http://www.microsoft.com/germany/sicherheit/twc/ Reliabilityattributes.mspx}}
+@ARTICLE{Egger:2008:linVoip,
+  author = {C. Egger and M. Hirschbichler},
+  title = {VoIP Security},
+  journal = {Linux Magazin - Technical Review, Security},
+  year = {2008},
+  pages = {54 - 61},
+  number = {10},
+  date-added = {2011-09-15 09:10:48 +0000},
+  date-modified = {2011-09-15 09:11:59 +0000}
+}
 
-@url{BSIa,
-	Author = {Bundesstelle f{\"u}r Informationstechnik},
-	Date-Added = {2011-12-20 22:37:58 +0000},
-	Date-Modified = {2011-12-20 22:39:39 +0000},
-	Lastchecked = {2011},
-	Title = {Glossar},
-	Urldate = {http://www.bit.bund.de/nn_373372/BIT/DE/Zentrale__Dienste/DVDV/Glossar/Functions/glossar,lv2=373502.html}}
+@BOOK{endler:2006:hacking,
+  title = {Hacking exposed VoIP: voice over IP security secrets \& solutions},
+  publisher = {McGraw-Hill},
+  year = {2006},
+  author = {Endler, D. and Collier, M.},
+  series = {Hacking Exposed},
+  bdsk-url-1 = {http://books.google.com/books?id=IPp07U0OktkC},
+  date-added = {2011-09-14 20:51:10 +0000},
+  date-modified = {2011-09-14 20:51:21 +0000},
+  isbn = {9780072263640},
+  lccn = {2007297320},
+}
 
-@article{CaoWang:2009:DevLab,
-	Author = {X. Cao and Y. Wang and A. Caciula, and Y. Wang},
-	Date-Added = {2011-09-15 09:10:48 +0000},
-	Date-Modified = {2011-11-22 12:23:42 +0000},
-	Journal = {SIGITE '09: Proceedings of the 10th ACM confer- ence on SIG-information technology education},
-	Number = {2009},
-	Pages = {155 - 160},
-	Title = {Developing a multifunctional network laboratory for teaching and re- search},
-	Year = {2009}}
+@BOOK{eren:2007:voip,
+  title = {VoIP Security: Konzepte und L{\"o}sungen f{\"u}r sichere VoIP-Kommunikation},
+  publisher = {Hanser Fachbuchverlag},
+  year = {2007},
+  author = {Eren, E. and Detken, K.O.},
+  bdsk-url-1 = {http://books.google.com/books?id=v8nE9ETF%5C_2kC},
+  date-added = {2011-09-14 20:54:42 +0000},
+  date-modified = {2011-09-14 20:54:51 +0000},
+  isbn = {9783446410862},
+}
 
-@article{Egger:2008:linVoip,
-	Author = {C. Egger and M. Hirschbichler},
-	Date-Added = {2011-09-15 09:10:48 +0000},
-	Date-Modified = {2011-09-15 09:11:59 +0000},
-	Journal = {Linux Magazin - Technical Review, Security},
-	Number = {10},
-	Pages = {54 - 61},
-	Title = {VoIP Security},
-	Year = {2008}}
+@BOOK{ois:fischer,
+  title = {{Open Internet Security - Von den Grundlagen zu den Anwendungen}},
+  publisher = {Springer Verlag},
+  year = {2000},
+  author = {S. Fischer and C. Rensing and U. Roedig},
+  month = jan,
+  note = {ISBN 3-540-66814-4.},
+  abstract = {Praxisnah und verst{\"a}ndlich informiert der {\"U}berblick {\"u}ber
+	die aktuellen Sicherheitsaspekte der Internet-Kommunikation. Die
+	Autoren behandeln die theoretischen Grundlagen verschiedener Sicherheitsstrategien
+	und zeigen die Risiken bei der Anwendung bzw. Implementierung auf.
+	Die beschriebenen Sicherheitstools orientieren sich am Schichtenmodell
+	der ISO/OSI, die Sicherheitsrelevanz der verschiedenen Schichten
+	wird analysiert. Security-Aspekte bei der IP-Telefonie und beim Internet-Banking
+	runden das Buch ab. },
+  date-modified = {2012-03-19 23:02:26 +0000}
+}
 
-@inproceedings{Abdelnur:2006:voipass,
-	Author = {Abdelnur, H. and Cridlig, V. and State, R. and Festor, O.},
-	Booktitle = {Proc. 1st IEEE Workshop VoIP Management and Security},
-	Date-Modified = {2011-09-15 09:12:20 +0000},
-	Doi = {10.1109/VOIPMS.2006.1638119},
-	Owner = {Philipp Schaden},
-	Pages = {29--34},
-	Timestamp = {2011.09.15},
-	Title = {VoIP security assessment: methods and tools},
-	Year = {2006},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1109/VOIPMS.2006.1638119}}
+@INPROCEEDINGS{Hung:2006:seciss,
+  author = {P. C. K. Hung and M. Martin},
+  title = {Security Issues in VOIP Applications},
+  booktitle = {Proc. Canadian Conf. Electrical and Computer Engineering CCECE '06},
+  year = {2006},
+  pages = {2361--2364},
+  date-modified = {2012-03-19 23:01:49 +0000},
+  owner = {Philipp Schaden},
+  timestamp = {2011.09.15}
+}
 
-@inproceedings{Anwar:2006:despatt,
-	__Markedentry = {[Philipp Schaden:6]},
-	Author = {Anwar, Z. and Yurcik, W. and Johnson, R. E. and Hafiz, M. and Campbell, R. H.},
-	Booktitle = {Proc. 25th IEEE Int. Performance, Computing, and Communications Conf. IPCCC 2006},
-	Date-Modified = {2011-09-15 09:12:33 +0000},
-	Doi = {10.1109/.2006.1629443},
-	Owner = {Philipp Schaden},
-	Timestamp = {2011.09.15},
-	Title = {Multiple design patterns for voice over IP (VoIP) security},
-	Year = {2006},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1109/.2006.1629443}}
+@OTHER{BSIa,
+  author = {Bundesstelle f{\"u}r Informationstechnik},
+  date-added = {2011-12-20 22:37:58 +0000},
+  date-modified = {2011-12-20 22:39:39 +0000},
+  lastchecked = {2012-07-11},
+  title = {Glossar},
+  url = {http://www.bit.bund.de/cln_092/nn_2149510/BIT/DE/Zentrale__Dienste/DVDV/Glossar/Functions/glossar,lv2=2149638.html}
+}
 
-@article{Butcher:2007:SecChall,
-	__Markedentry = {[Philipp Schaden:]},
-	Author = {Butcher, D. and X. Li and J. Guo},
-	Date-Modified = {2012-03-19 23:02:48 +0000},
-	Doi = {10.1109/TSMCC.2007.905853},
-	Journal = IEEE_J_SMCC,
-	Number = {6},
-	Owner = {Philipp Schaden},
-	Pages = {1152--1162},
-	Timestamp = {2011.09.15},
-	Title = {Security Challenge and Defense in VoIP Infrastructures},
-	Volume = {37},
-	Year = {2007},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1109/TSMCC.2007.905853}}
+@BOOK{firewallsysteme2003,
+  title = {Firewall-Systeme},
+  publisher = {mitp-Verlag},
+  year = {2003},
+  editor = {Norbert Pohlmann},
+  author = {Norbert Pohlmann},
+  edition = {5. Auflage},
+  timestamp = {2012.07.17}
+}
 
-@inproceedings{Coulibaly:2010:secvoipb,
-	Author = {Coulibaly, E. and L. Liu},
-	Booktitle = {Proc. 2nd Int Computer Engineering and Technology (ICCET) Conf},
-	Date-Modified = {2012-03-19 23:01:35 +0000},
-	Doi = {10.1109/ICCET.2010.5485790},
-	Owner = {Philipp Schaden},
-	Timestamp = {2011.09.15},
-	Title = {Security of Voip networks},
-	Volume = {3},
-	Year = {2010},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1109/ICCET.2010.5485790}}
+@BOOK{porter:2006:practicalvoip,
+  title = {Practical VoIP security},
+  publisher = {Syngress Publishing},
+  year = {2006},
+  author = {Porter, T. and Porter, T.},
+  bdsk-url-1 = {http://books.google.com/books?id=BYxdyekyRlwC},
+  date-added = {2011-09-14 20:56:24 +0000},
+  date-modified = {2011-09-14 20:56:42 +0000},
+  isbn = {9781597490603},
+}
 
-@book{eckert:2009:sicherheit,
-	Author = {Eckert, C.},
-	Date-Added = {2011-09-14 20:49:14 +0000},
-	Date-Modified = {2011-09-14 20:49:25 +0000},
-	Isbn = {9783486589993},
-	Publisher = {Oldenbourg Wissensch.Vlg},
-	Title = {IT-Sicherheit: Konzepte - Verfahren - Protokolle},
-	Url = {http://books.google.com/books?id=akxvOu7pY40C},
-	Year = {2009},
-	Bdsk-Url-1 = {http://books.google.com/books?id=akxvOu7pY40C}}
+@INPROCEEDINGS{Qu:2009:desactv,
+  author = {Z. Qu and W. Yang},
+  title = {The Design of an Active VoIP Security Defense Model Based on Dynamic	Self-Adaptive Diffluence},
+  booktitle = {Proc. Int. Conf. Environmental Science and Information Application Technology ESIAT 2009},
+  year = {2009},
+  volume = {1},
+  pages = {657--660},
+  date-modified = {2012-03-19 23:01:24 +0000},
+  owner = {Philipp Schaden},
+  timestamp = {2011.09.15}
+}
 
-@book{endler:2006:hacking,
-	Author = {Endler, D. and Collier, M.},
-	Date-Added = {2011-09-14 20:51:10 +0000},
-	Date-Modified = {2011-09-14 20:51:21 +0000},
-	Isbn = {9780072263640},
-	Lccn = {2007297320},
-	Publisher = {McGraw-Hill},
-	Series = {Hacking Exposed},
-	Title = {Hacking exposed VoIP: voice over IP security secrets \& solutions},
-	Url = {http://books.google.com/books?id=IPp07U0OktkC},
-	Year = {2006},
-	Bdsk-Url-1 = {http://books.google.com/books?id=IPp07U0OktkC}}
+@INPROCEEDINGS{Ronniger:2010:robflex,
+  author = {Ronniger, M. and Fankhauser, F. and Schanes, C. and Grechenig, T.},
+  title = {A robust and flexible test environment for VoIP security tests},
+  booktitle = {Proc. Int Internet Technology and Secured Transactions (ICITST) Conf. for},
+  year = {2010},
+  pages = {1--6},
+  date-modified = {2011-09-15 09:13:15 +0000},
+  owner = {Philipp Schaden},
+  timestamp = {2011.09.15}
+}
 
-@book{eren:2007:voip,
-	Author = {Eren, E. and Detken, K.O.},
-	Date-Added = {2011-09-14 20:54:42 +0000},
-	Date-Modified = {2011-09-14 20:54:51 +0000},
-	Isbn = {9783446410862},
-	Publisher = {Hanser Fachbuchverlag},
-	Title = {VoIP Security: Konzepte und L{\"o}sungen f{\"u}r sichere VoIP-Kommunikation},
-	Url = {http://books.google.com/books?id=v8nE9ETF\_2kC},
-	Year = {2007},
-	Bdsk-Url-1 = {http://books.google.com/books?id=v8nE9ETF%5C_2kC}}
+@BOOK{strobel:2003:firewalls,
+  title = {Firewalls und IT-Sicherheit},
+  publisher = {dpunkt-Verl.},
+  year = {2003},
+  author = {Strobel, S.},
+  bdsk-url-1 = {http://books.google.com/books?id=KlQbAgAACAAJ},
+  date-added = {2011-09-14 20:47:26 +0000},
+  date-modified = {2011-09-14 20:47:49 +0000},
+  isbn = {9783898641524},
+}
 
-@inproceedings{Hung:2006:seciss,
-	Author = {P. C. K. Hung and M. Martin},
-	Booktitle = {Proc. Canadian Conf. Electrical and Computer Engineering CCECE '06},
-	Date-Modified = {2012-03-19 23:01:49 +0000},
-	Doi = {10.1109/CCECE.2006.277789},
-	Owner = {Philipp Schaden},
-	Pages = {2361--2364},
-	Timestamp = {2011.09.15},
-	Title = {Security Issues in VOIP Applications},
-	Year = {2006},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1109/CCECE.2006.277789}}
+@OTHER{stadtwien2012Telefon,
+  author = {Stadt Wien},
+  lastchecked = {2012-07-11},
+  title = {Geschichte des Telefons},
+  url = {http://www.stadt-wien.at/unternehmen/dienstleistungen/125-jahre-festnetz/zone-1.html}
+}
 
-@book{porter:2006:practicalvoip,
-	Author = {Porter, T. and Porter, T.},
-	Date-Added = {2011-09-14 20:56:24 +0000},
-	Date-Modified = {2011-09-14 20:56:42 +0000},
-	Isbn = {9781597490603},
-	Publisher = {Syngress Publishing},
-	Title = {Practical VoIP security},
-	Url = {http://books.google.com/books?id=BYxdyekyRlwC},
-	Year = {2006},
-	Bdsk-Url-1 = {http://books.google.com/books?id=BYxdyekyRlwC}}
+@INPROCEEDINGS{5486174, 
+author={Meng Yao-Hua and Li Wei-Min and Wang Bing and Ding Guo-Chao}, 
+booktitle={Computer Engineering and Technology (ICCET), 2010 2nd International Conference on}, title={A methodology for the improvement of Voice-over-IP}, 
+year={2010}, 
+month={april}, 
+volume={6}, 
+number={}, 
+pages={V6-401 -V6-403}, 
+keywords={DHCP;Ethernet;IP construction;encrypted communication;extreme programming simulation;fiber optic cables;flip-flop gate deployment;voice-over-IP;Internet telephony;cryptography;flip-flops;}, 
+doi={10.1109/ICCET.2010.5486174}, 
+ISSN={},
+}
 
-@inproceedings{Qu:2009:desactv,
-	Author = {Z. Qu and W. Yang},
-	Booktitle = {Proc. Int. Conf. Environmental Science and Information Application Technology ESIAT 2009},
-	Date-Modified = {2012-03-19 23:01:24 +0000},
-	Doi = {10.1109/ESIAT.2009.88},
-	Owner = {Philipp Schaden},
-	Pages = {657--660},
-	Timestamp = {2011.09.15},
-	Title = {The Design of an Active VoIP Security Defense Model Based on Dynamic Self-Adaptive Diffluence},
-	Volume = {1},
-	Year = {2009},
-	Bdsk-Url-1 = {http://dx.doi.org/10.1109/ESIAT.2009.88}}
+@ARTICLE{5427399, 
+author={Zourzouvillys, T. and Rescorla, E.}, 
+journal={Internet Computing, IEEE}, title={An Introduction to Standards-Based VoIP: SIP, RTP, and Friends}, 
+year={2010}, 
+month={march-april }, 
+volume={14}, 
+number={2}, 
+pages={69 -73}, 
+keywords={Internet;RTP;SIP;call setup;media transport;public switched telephone network;real-time communications;standard-based VoIP;voice communications;voice over IP;Internet telephony;voice communication;}, 
+doi={10.1109/MIC.2010.31}, 
+ISSN={1089-7801},
+}
 
-@inproceedings{Ronniger:2010:robflex,
-	Author = {Ronniger, M. and Fankhauser, F. and Schanes, C. and Grechenig, T.},
-	Booktitle = {Proc. Int Internet Technology and Secured Transactions (ICITST) Conf. for},
-	Date-Modified = {2011-09-15 09:13:15 +0000},
-	Owner = {Philipp Schaden},
-	Pages = {1--6},
-	Timestamp = {2011.09.15},
-	Title = {A robust and flexible test environment for VoIP security tests},
-	Year = {2010}}
+@INPROCEEDINGS{6195475, 
+author={Jin Tang and Yu Cheng and Yong Hao}, 
+booktitle={INFOCOM, 2012 Proceedings IEEE}, title={Detection and prevention of SIP flooding attacks in voice over IP networks}, 
+year={2012}, 
+month={march}, 
+volume={}, 
+number={}, 
+pages={1161 -1169}, 
+keywords={3D sketch design;Hellinger distance detection technique;SIP flooding attack detection;SIP flooding attack prevention;SIP messages;VoIP system;constant-size data set;detection threshold protection;dynamic background traffic;estimation freeze mechanism;probability distribution evolution;session initiation protocol;sketch data structure;voice over IP networks;Internet telephony;data structures;signalling protocols;statistical distributions;telecommunication security;telecommunication traffic;}, 
+doi={10.1109/INFCOM.2012.6195475}, 
+ISSN={0743-166X},}
 
-@book{strobel:2003:firewalls,
-	Author = {Strobel, S.},
-	Date-Added = {2011-09-14 20:47:26 +0000},
-	Date-Modified = {2011-09-14 20:47:49 +0000},
-	Isbn = {9783898641524},
-	Publisher = {dpunkt-Verl.},
-	Title = {Firewalls und IT-Sicherheit},
-	Url = {http://books.google.com/books?id=KlQbAgAACAAJ},
-	Year = {2003},
-	Bdsk-Url-1 = {http://books.google.com/books?id=KlQbAgAACAAJ}}
+@INPROCEEDINGS{5485790, 
+author={Coulibaly, E. and Lian Hao Liu}, 
+booktitle={Computer Engineering and Technology (ICCET), 2010 2nd International Conference on}, title={Security of Voip networks}, 
+year={2010}, 
+month={april}, 
+volume={3}, 
+number={}, 
+pages={V3-104 -V3-108}, 
+keywords={UML model;VoIPSA;packet data networks;voice over IP security alliance;Internet telephony;Unified Modeling Language;protocols;telecommunication security;}, 
+doi={10.1109/ICCET.2010.5485790}, 
+ISSN={},
+}
+
+@INPROCEEDINGS{6103925, 
+author={Lu Tian and Dailly, N. and Qiao Qiao and Jihua Lu and Jiannan Zhang and Jing Guo and Ji'ao Zhang}, 
+booktitle={Mobile Congress (GMC), 2011 Global}, title={Study of SIP protocol through VoIP solution of #x201C;Asterisk #x201D;}, 
+year={2011}, 
+month={oct.}, 
+volume={}, 
+number={}, 
+pages={1 -5}, 
+keywords={Asterisk;IETF signaling protocol;IP-based networks;SIP protocol;VoIP solution;multimedia exchanges;session initiation protocol;session management;voice communication;voice over IP;IP networks;Internet telephony;signalling protocols;voice communication;}, 
+doi={10.1109/GMC.2011.6103925}, 
+ISSN={},
+}
+
+@INPROCEEDINGS{5474384, 
+author={Chung-Hsin Liu and Wu-Fan Hsu}, 
+booktitle={Multimedia and Information Technology (MMIT), 2010 Second International Conference on}, title={The Study of the VoIP through Firewall Security}, 
+year={2010}, 
+month={april}, 
+volume={2}, 
+number={}, 
+pages={289 -292}, 
+keywords={IPv4-based environment;Internet;NAT mechanism;VoIP study;firewall security;network address translation;voice-over-IP;Internet telephony;authorisation;protocols;quality of service;}, 
+doi={10.1109/MMIT.2010.159}, 
+ISSN={},
+}
+
+@ARTICLE{5439534, 
+author={Keromytis, A.D.}, 
+journal={Security Privacy, IEEE}, title={Voice-over-IP Security: Research and Practice}, 
+year={2010}, 
+month={march-april }, 
+volume={8}, 
+number={2}, 
+pages={76 -78}, 
+keywords={VoIP security;communication eavesdropping;denial of service;equipment crash;published vulnerabilities;server crash;telephony infrastructure;user impersonation;voice-over-IP;Internet telephony;security of data;}, 
+doi={10.1109/MSP.2010.87}, 
+ISSN={1540-7993},
+}
+
+%@OTHER{Micro05,
+%  author = {Microsoft Deutschland GmbH},
+%  date-added = {2011-12-20 22:39:48 +0000},
+%  date-modified = {2011-12-20 22:42:08 +0000},
+%  title = {Die 6 Merkmale der Zuverl{\"a}ssigkeit},
+%  url = {http://www.microsoft.com/germany/sicherheit/twc/Reliabilityattributes.mspx}
+%}

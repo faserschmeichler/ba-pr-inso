@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Einleitung}
+\label{sec:introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Das hier zur Verfügung gestellte Template ist als Hilfestellung gedacht, sie stellt keine verbindliche Richtlinie dar. Der Aufbau einer Diplomarbeit hängt sehr von der bearbeiteten Thematik ab. Diese Vorlage ist für eine Arbeit erstellt, die einen experimentellen Teil enthält (Fallbeispiel). Bei theoretischen Arbeiten oder Programmierungen sind entsprechende Anpassungen vorzunehmen, bitte Rücksprache mit Ihrem Betreuer halten. Bei der Gliederung der Arbeit ist darauf zu achten, dass das Inhaltsverzeichnis einen ersten Eindruck von der thematischen Vollständigkeit sowie der Ausgewogenheit der Behandlung des Themas bietet. Die Gliederung und somit auch der Wahl der Kapitelüberschriften vermitteln einen Eindruck über die angewendete Systematik, die Vollständigkeit der Behandlung des Themas und deren \enquote{Wissenschaftlichkeit}.
+
+In der Einleitung soll die Zielsetzung der Arbeit beschrieben, ihre Einordnung in einen übergeordneten Kontext hergestellt und die Bedeutung des Themas erörtert werden. Zu diesem Zweck ist die Einleitung in folgende Unterkapitel unterteilt:
+\begin{itemize}
+	\item Problemstellung
+	\item Motivation
+	\item Zielsetzung
+	\item Aufbau der Arbeit
+\end{itemize}
+
+Durch die Einleitung sollen folgende Punkte in den jeweiligen Unterkapiteln klargestellt werden:
+\begin{itemize}
+	\item Etwaige thematische Einschränkungen bzw. Auswahl und Begründung der Bearbeitungsziele
+	\item Betrachtung verschiedener methodischer Alternativen zur Aufgabenlösung und Erklärung der Entscheidung
+	\item Gewählter Lösungsansatz, z.B. theoretische Untersuchung, Literaturauswertung und -vergleich oder eine empirische, auf eigenen Erhebungen basierende Untersuchung
+\end{itemize}
+
+\paragraph{Organisatorisches}
+Bitte einen Zeitplan für die Verfassung Ihrer Diplomarbeit erarbeiten und mit Ihrem Betreuer abstimmen. Es gibt sehr \enquote{kurzlebige} Themenstellungen, die rasch an Aktualität verlieren, da ist der Zeitplan unbedingt einzuhalten, ansonsten wird das Thema neu vergeben. Bei Themen, die länger aktuell bleiben, kann der Zeitrahmen auch länger erstreckt werden, dies aber bitte im Vorfeld abklären! Üblicherweise sollte die Verfassung einer Diplomarbeit ein halbes Jahr bis ein Jahr dauern, Ausnahmen bitte zumindest durch regelmäßigen email-Kontakt abstimmen.
+
+Der Umfang einer Diplomarbeit beträgt üblicherweise 90 bis ca. 120 Seiten. Beurteilungskriterien für eine Diplomarbeit ist nicht nur die Qualität der praktischen Arbeit, sondern auch Aufbau, Inhalt und Formulierung der schriftlichen Arbeit. Insbesondere sind die Grundregeln wissenschaftlichen Arbeitens (z.B. richtiges Zitieren) zu beachten.
+
+\paragraph{Allgemeines}
+Achtung beim Setzen von Absätzen: Eine leere Zeile zwischen zweit Textsegmenten bewirkt einen Absatz. Einen Zeilenumbruch wird mit \verb|\\| erzwungen.
+
+Fußzeilen: Bei technischen Arbeiten eher unüblich. \\
+In den Sozialwissenschaften (z.B. BWL) ist es üblich, die Referenz in eine Fußnote zu setzen. 
+\\
+In den technischen Wissenschaften ist es üblich, im Text ein Kürzel (Dorn et al. 1999) oder eine Zahl [1] zu verwenden, um dann im Anhang der Arbeit alle Referenzen detailliert aufzuführen, wobei jede Referenz mit dem Kürzel beginnt.
+
+Bei einer wissenschaftlichen Arbeit wird Wert auf die Einhaltung formaler Aspekte des guten Schreibens gelegt. Es ist hilfreich, wenn man seinen eigenen Schreibstil kritisch in Bezug auf folgende Punkte überprüft:
+\begin{itemize}
+	\item Einfachheit (das \ac{KISS}-Prinzip gilt nicht nur für die Softwareentwicklung, sondern auch für wissenschaftliche Arbeiten: Mach es schlicht und wesentlich/\acl{KISS})
+	\item Gliederung/ logische Ordnung (vom Allgemeinen zum Konkreten, nachvollziehbare Kette von einer Fragestellung/ einem Problem über die Bearbeitung und Zerlegung in Detailprobleme zur Lösung und der Ableitung von Erkenntnissen)
+	\item Kürze/Prägnanz (keine Schachtelsätz, Wiederholungen vermeiden – \enquote{Don't repeat yourself})
+	\item Anregende Zusätze (erläuternde/ interessante/ spannende Praxisbeispiele etc.)
+	\item Sprache/Stil (kein Erzählstil, möglichst keine \enquote{ich}-Form, objektiv)
+	\item Korrekte Formeln und Abbildungen
+	\item Korrekte Zitierweise (siehe Kapitel Literaturverzeichnis)
+	\item Einhaltung definierter Rahmenbedingungen (z.B. diese Vorlage)
+	\item Vermeiden von Anglizismen. Grundsätzlich sollte in einer in Deutsch verfassten Diplomarbeit immer das deutsche Wort verwendet werden, wenn es unmissverständlich und akzeptiert ist. Ein Eindeutschen um jeden Preis ist allerdings zu vermeiden, da dies zu schwer lesbaren Texten führt. Beispiele: Der Begriff \enquote{Unterbrechung des Programmflusses} ist angebrachter als \enquote{Interrupt des Programmflusses}, und \enquote{verdeckte Kanäle} ist als akzeptierter deutscher Begriff für \enquote{Covert Channels} zu verwenden. Umgekehrt ist aber \enquote{Cursor} das bessere Wort als \enquote{Lichtmarke}. Anglizismen können als Stilmittel genutzt werden, etwa wenn man von einer \enquote{Quick and Dirty} Implementierung spricht.
+\end{itemize}
+
+\paragraph{Typographie}
+Grundsätzlich sollten nicht mehr als drei unterschiedliche Schriftarten verwendet werden. Grundsätzlich sollte die Typographie sowie die Anordnung von Bildern, Tabellen, etc. \LaTeX überlassen werden. Allerdings können Silbentrennungen durch \verb|\-| gesteuert werden.
+
+Abweichungen nach persönlichem Geschmack und in Rücksprache mit Ihrem Betreuer sind zulässig. Als Stilmittel werden üblicherweise nur die Fettschrift und Kursivschrift verwendet - Unterstreichungen, Schattenschriften etc. sind zu vermeiden. Blocksatz bitte mit automatischer Silbentrennung verwenden, Rechtschreibprüfung aktivieren.
+
+Generell kann bei der Einleitung eine modifizierte Version des Exposés als Basis verwendet werden.
+
+%=======================================================================
+\section{Problemstellung}
+%=======================================================================
+
+Formulierung der Problemstellung, Einbettung in das Forschungsumfeld und Theorie, auf die sich die Arbeit beziehen. Tendenziell kurz, allgemeiner und sehr gut verständlich -- detaillierter im Kapitel \enquote{Grundlagen}.
+
+Die formulierte Fragestellung soll das Interesse an der Lösung wecken (eine langweilige oder triviale Problemstellung lässt meistens auch eine eher weniger interessante wissenschaftliche Arbeit erwarten).
+
+Nach dem Lesen dieses Kapitels sollten folgende Punkte klar dargestellt sein:
+\begin{itemize}
+	\item Welche konkrete Fragestellung/Arbeitshypothese/welches Problem liegt dem Thema zugrunde?
+	\item Klare Definition des Untersuchungsgegenstands (z.B. effiziente Internationalisierung/ Mehrsprachigkeit von Computerprogrammen im Java Umfeld).
+	\item Darlegung und Begründung thematischer Abgrenzungen.
+	\item Klare Darstellung eines ggf. übergeordneten fachlichen Kontexts/Zusammenhangs (z.B. des medizinisch/ organisatorischen Rahmens, der bei einer Arbeit über Usability einen Einfluss auf die Usability einer auf Tablets/Touchscreens basieren Pflegedokumentation im klinischen Bereich hat).
+\end{itemize}
+
+In diesem Kapitel wird das Problem und sein Kontext beschrieben (\enquote{die Sache/die Frage}) – nicht aber, warum es gerade zum Zeitpunkt der Diplomarbeit notwendig ist, für dieses Problem eine Lösung zu erarbeiten. Das \enquote{Warum} (die Motivation) wird im nächsten Unterkapitel beschrieben.
+
+%=======================================================================
+\section{Motivation}
+%=======================================================================
+
+In diesem Kapitel wird der Forschungsbedarf aufgezeigt. Nach dem Lesen dieses Kapitels sollten folgende Punkte klar dargestellt sein:
+\begin{itemize}
+	\item Aktueller Stand der Wissenschaft in Bezug auf die zuvor formulierte Problemstellung und klare Darstellung, was hier unzureichend/offen ist. 
+	\item GGf. Darstellung des größeren Forschungsbereichs, in den die Diplomarbeit eingebettet ist.
+	\item Darlegung der Bedeutung des Themas für den Stand oder die Weiterentwicklung eines Bereichs der Informatik (z.B. Datenbanksysteme, Mobile Anwendungen, Java-Programmierung, Rechenzentrumsbetrieb, \dots) oder eines Fachbereichs (z.B. Bankwesen, Wertpapierhandel, Gesundheitswesen, Transportwesen, Flugsicherheit \dots). Erklärung, was durch die Lösung des Problems z.B. kostengünstiger/schneller/hochwertiger/sicherer/anwendbarer/\enquote{schöner} etc. wird.
+\end{itemize}
+
+%=======================================================================
+\section{Zielsetzung}
+%=======================================================================
+
+Nachdem die Problemstellung und die Motivation zu deren Lösung formuliert wurden, wird in diesem Kapitel das zu erarbeitende Resultat beschrieben.
+
+Nach dem Lesen dieses Kapitels sollten folgende Punkte klar dargestellt sein:
+\begin{itemize}
+	\item Umfang, in dem die Problemstellung am Ende der Arbeit gelöst sein soll bzw. mit welchen Einschränkungen.
+	\item Methode zur Erarbeitung des Resultats.
+	\item Gibt es einen Theorie- und einen Praxisteil?
+	\item Schwerpunkte des Praxisteils (z.B. Durchführung einer Umfrage, Programmierung, Herstellung von Hardware, Erprobung einer Methode in einem konkreten Projekt)?
+	\item Art des Resultats (z.B. ein Programm, eine Formel, eine Methode, die Erweiterung einer existierenden Methode, ein Konzept, ein Framework, Hardware-Prototyp, eine bewiesene Erkenntnis)?
+\end{itemize}
+
+%=======================================================================
+\section{Aufbau der Arbeit}
+%=======================================================================
+
+Beispielhaft:
+
+Kapitel \ref{sec:fundamentals} behandelt sowohl Grundlagen als auch Definitionen und bietet einen Überblick \dots, die als Basis für \dots dienen.
+
+\dots, wird in Kapitel 3 erläutert..
+
+Ein Anwendungsszenario (Fallbeispiel), das \dots, ist in Kapitel 4 dargestellt. Dieses Szenario umfasst \dots.
+
+Kapitel 5 setzt sich \dots. auseinander.
+
+Einsatzmöglichkeiten in der Praxis werden in Kapitel 6 diskutiert.
+
+Abschließend fasst Kapitel \sec{sec:conclusion} die wesentlichen Erkenntnisse zusammen und gibt einen Ausblick in die Zukunft.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{General Information}
+% 
+% This document is intended as a template and guideline and should support the author in the course of doing the master's thesis.
+% Assessment criteria comprise the quality of the theoretical and/or practical work as well as structure, content and wording of the written master's thesis. Careful attention should be given to the basics of scientific work (e.g., correct citation).\footnote{Sample Footnote}
+% 
+% \section{Organizational Issues}
+% 
+% A master's thesis at the Faculty of Informatics has to be finished within six months. During this period regular meetings between the advisor(s) and the author have to take place.
+% In addition, the following milestones have to be fulfilled:
+% \begin{enumerate}
+%   \item  Within one month after having fixed the topic of the thesis the master's thesis proposal has to be prepared and must be accepted by the advisor(s). The master's thesis proposal must follow the respective template of the dean of academic affairs. Thereafter the proposal has to be applied for at the deanery. The necessary forms may be found on the web site of the Faculty of Informatics. \url{http://www.informatik.tuwien.ac.at/dekanat/formulare.html}
+%   \item  Accompanied with the master's thesis proposal, the structure of the thesis in terms of a table of contents has to be provided.
+%   \item Then, the first talk has to be given at the so-called ``Seminar for Master Students''. The slides have to be discussed with the advisor(s) one week in advance. Attendance of the ``Seminar for Master Students'' is compulsory and offers the opportunity to discuss arising problems among other master students.
+%   \item At the latest five months after the beginning, a provisional final version of the thesis has to be handed over to the advisor(s).  
+%   \item As soon as the provisional final version exists, a first poster draft has to be made. The making of a poster is a compulsory part of the ``Seminar for Master Students'' for all master studies at the Faculty of Informatics. Drafts and design guidelines can be found at \url{http://www.informatik.tuwien.ac.at/studium/richtlinien}.
+%   \item After having consulted the advisor(s) the second talk has to be held at the ``Seminar for Master Students''.
+%   \item At the latest six months after the beginning, the corrected version of the master's thesis and the poster have to be handed over to the advisor(s).
+%   \item After completion the master's thesis has to be presented at the ``epilog''. For detailed information on the epilog see: \\ \url{http://www.informatik.tuwien.ac.at/studium/epilog}
+% \end{enumerate}
+% 
+% \section{Structure of the Master's Thesis}
+% 
+% If the curriculum regulates the language of the master's thesis to be English (like for ``Business Informatics''), the thesis has to be written in English. Otherwise, the master's thesis may be written in English or in German. The structure of the thesis is predetermined.
+% The table of contents is followed by the introduction and the main part, which can vary according to the content. The master's thesis ends with the bibliography (compulsory) and the appendix (optional).
+% 
+% \begin{itemize}
+%   \item	Cover page
+%   \item Acknowledgements
+%   \item Abstract of the thesis in English and German
+%   \item Table of contents
+%   \item Introduction
+%   	\begin{itemize}
+%   		\item motivation
+%   		\item problem statement (which problem should be solved?)
+%   		\item aim of the work
+%   		\item methodological approach
+%   		\item structure of the work
+%   	\end{itemize}
+%   \item State of the art / analysis of existing approaches
+%   	\begin{itemize}
+%   		\item literature studies
+%   		\item analysis
+%   		\item comparison and summary of existing approaches
+%   	\end{itemize}
+%   \item Methodology
+%   	\begin{itemize}
+%   		\item used concepts
+%   		\item methods and/or models
+%   		\item languages
+%   		\item design methods
+%   		\item data models
+%   		\item analysis methods
+%   		\item formalisms
+%   	\end{itemize}
+%   \item Suggested solution/implementation
+%   \item Critical reflection
+%   	\begin{itemize}
+%   		\item comparison with related work
+%   		\item discussion of open issues
+%   	\end{itemize}
+%   \item Summary and future work
+%   \item Appendix: source code, data models, \dots
+%   \item Bibliography
+% \end{itemize}
+% 
