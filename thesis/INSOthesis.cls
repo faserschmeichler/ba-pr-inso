@@ -152,6 +152,7 @@
 \RequirePackage{longtable}
 \RequirePackage{multirow}
 \RequirePackage{float}
+%\RequirePackage{textcomp}
 
 % programming packages
 \RequirePackage{calc}

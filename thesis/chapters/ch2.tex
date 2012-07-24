@@ -284,7 +284,7 @@
 	Maßnahmen der Kategorie Z stellen zusätzliche Maßnahmen dar, die sich in der Praxis bewährt haben. 
 	Maßnahmen der Kategorie W sind Maßnahmen die Hintergrundwissen zum jeweiligen Thema liefern 
 	und für ein zusätzliches Grundverständnis der jeweiligen Thematik beitragen.
-	\todo[inline]{Quelle Wikipedia hinzufügen}
+	\todo[inline]{Quelle Wikipedia hinzufügen, Formulierung!}
 	
 	\begin{figure}[htbp]
 		\centering
@@ -381,6 +381,21 @@
   	kontrolliert die Kommunikationsbeziehungen und Kommunikationspartner, 
   	reglementiert die Kommunikation nach einer Sicherheitspolitik, protokolliert sicherheitsrelevante 
   	Ereignisse und alarmiert bei starken Verstößen den Security-Administrator. \\
+  	
+  	\textbf{Allgemeine Ziele von Firewall-Systemen}
+  	\begin{itemize}
+  		\item Zugangskontrolle:
+  			Auf Daten-, Benutzer- und Netzwerkebene kann die Sicherheit überprüft und gewährleistet werden, 
+  			damit ein sicherer Datenaustausch möglich ist.
+  		\item Rechteverwaltung:
+  			Mittels Protokollen und Diensten kannst festgelegt werden, wann für wen eine Kommunikation über das 
+  			Firewall-System erlaubt ist.
+  		\item Vertraulichkeit:
+  			Die interne Struktur wird hinter dem Schutzsystem verborgen und Nachrichten werden nie im Klartext 
+  			übermittelt.
+  	\end{itemize}
+  	\todo[inline]{Quelle hinzufügen}
+  	
   	Nachfolgende Grafik zeigt die exemplarische Einbindung einer Firewall in ein Netzwerk und die Platzierung einer Firewall.
   	
   	\begin{figure}[htbp]
@@ -421,19 +436,82 @@
   	\end{itemize}
   	\todo[inline]{Quelle hinzufügen}
   	
-  	\textbf{Allgemeine Ziele von Firewall-Systemen}
-  	\begin{itemize}
-  		\item Zugangskontrolle:
-  			Auf Daten-, Benutzer- und Netzwerkebene kann die Sicherheit überprüft und gewährleistet werden, 
-  			damit ein sicherer Datenaustausch möglich ist.
-  		\item Rechteverwaltung:
-  			Mittels Protokollen und Diensten kannst festgelegt werden, wann für wen eine Kommunikation über das 
-  			Firewall-System erlaubt ist.
-  		\item Vertraulichkeit:
-  			Die interne Struktur wird hinter dem Schutzsystem verborgen und Nachrichten werden nie im Klartext 
-  			übermittelt.
-  	\end{itemize}
-  	\todo[inline]{Quelle hinzufügen}
+  	\textbf{Screened Subnet} \cite{Firewall1} \\ \\
+  	Das Screened Subnet ist ein entkoppeltes, isoliertes Teilnetzwerk, 
+  	das zwischen das interne und das unsichere Netz geschaltet wird. 
+  	In diesem Teilnetzwerk überprüfen zwei Packet Filter die Datenpakete 
+  	aus dem internen und dem externen Netz, ein oder mehrere Informationsserver 
+  	stellen dem öffentlichen Netz Informationen zur Verfügung, 
+  	und in der Bastion werden die Informationen auf der Anwendungsschicht kontrolliert.
+
+	Dem unsicheren Netz sind nur die Rechner im Screened Subnet bekannt, 
+	die Rechner des zu schützenden Netzes bleiben verborgen. \\
+	
+	\textbf{Packet Filter} \cite{Firewall1} \\ \\
+	Die beiden Packet Filter bilden den Zugang zum Screened Subnet. 
+	Der Sicherheitsmechanismus Packet Filter analysiert die ein- und ausgehenden Netzwerk-Frames.
+	Dabei werden die Filterregeln so definiert, dass jede IP-Verbindung von innen 
+	(zu schützendes Netz) und außen (unsicheres Netz) über die Bastion geroutet wird. 
+	Für nicht auf IP basierende Protokolle, wie z.B. \ac{OSI}, 
+	können die Filterregeln der beiden Packet Filter so definiert werden, 
+	dass die Pakete direkt zwischen ihnen geroutet werden.
+	\\
+	Dabei wird im IP-Header die Source- und Destination-Adresse kontrolliert.
+	Es wird überprüft, ob die Verbindung mit Hilfe von UDP oder TCP durchgeführt wird, 
+	und wer die Verbindung aufbaut. Außerdem werden die 
+	Dienste/Portnummern (FTP, Telnet, HTTP usw.) kontrolliert. 
+	Die Informationen darüber, was zu überprüfen ist, werden einer Rechteliste 
+	(Access List) entnommen. Bei Verstoß gegen die Regeln wird dies entsprechend protokolliert und, 
+	falls definiert, eine Warnmeldung an das Security Management gesendet. \\
+	
+	\textbf{Application Gateway}  \cite{Firewall1} \\ \\
+	Ein Application Gateway ist ein Computer mit einem sicheren Betriebssystem 
+	und i.d.R. zwei Netzwerkanschlüssen, der die beiden Netzbereiche 
+	logisch und physikalisch entkoppelt. In der Bastion werden die Informationen 
+	auf der Anwendungsschicht kontrolliert und eine Benutzerauthentikation durchgeführt.
+	\\
+	Als einziger vom unsicheren Netz (z.B. Internet) erreichbarer Host muss der 
+	Application Gateway besonders geschützt werden. Die Benutzer, 
+	die über die Bastion auf Rechnersysteme im zu schützenden Netz zugreifen möchten, 
+	müssen zuerst eine Identifikation und Authentikation mit der Bastion durchführen, 
+	wozu spezielle Passwortsysteme (Einmalpasswort, Sicherheitstoken) eingesetzt werden.
+	\\
+	Auf dem Application Gateway wird für jeden erlaubten Dienst (Telnet, FTP usw.) 
+	ein sogenannter Proxy Agent installiert, der spezielle Sicherheitsfunktionen zur Verfügung stellt.
+	Das bedeutet, dass über die Bastion nur Dienste verwendet werden können, 
+	für die entsprechende Proxy Agents installiert wurden. 
+	Für den FTP-Proxy Agent kann dann z.B. definiert werden, 
+	welcher Befehl verwendet werden darf und welcher nicht.
+
+	Der Proxy Agent nimmt eine Verbindung vom Quellrechner an, 
+	baut nach der Überprüfung der Quell- und Zieladresse eine Verbindung 
+	zum Zielrechner auf und transferiert dann Datenpakete zwischen diesen Verbindungen. 
+	Außerdem werden die Aktivitäten, die über die Bastion abgewickelt werden, protokolliert, 
+	z.B. welche Dateien mit welchen Attributen übertragen werden.
+	\\
+	Auf der Bastion selbst dürfen keine unnötigen bzw. nicht unbedingt notwendigen
+	Prozesse im Hintergrund laufen, die häufig die Ursache von Sicherheitslücken sind. \\
+	
+	\textbf{Security Management Station} \cite{Firewall1} \\ \\
+	Mit Hilfe des Security Managements werden die Zugangskontrolltabellen verwaltet 
+	und in die Packet Filter sowie in den Application Gateway geladen. 
+	Die Logbücher aus den Packet Filtern und der Application Gateway können gelesen und ausgewertet werden. 
+	Weiterhin versorgt das Security Management die Packet Filter und die Application Gateway 
+	mit den benötigten sicherheitsrelevanten Informationen, zum Beispiel mit Schlüsseln.
+	Dabei ist die Kommunikation zwischen den Packet Filtern sowie mit der Bastion 
+	und dem Security Management kryptographisch gesichert. 
+	Die Logbücher können bei Bedarf (z.B. bei einem Angriffsversuch) zur Beweissicherung verwendet werden. \\
+	\\
+	\textbf{Information Server} \cite{Firewall1} \\ \\
+	Informationen, die öffentlich zugänglich sein sollen, werden auf einem 
+	Information Server dem Internet zur Verfügung gestellt. 
+	Dieser Information Server steht vor der Application Gateway. 
+	Damit ist ein Zugriff von außen auf das zu schützende Netz nicht möglich.
+	\\
+	Durch die Entkopplung der Netze gelangen User aus dem unsicheren Netz 
+	nur bis zum Information Server, der sich vor der Bastion befindet, nicht jedoch unkontrolliert durch sie hindurch.
+	\\
+	\todo[inline]{Formatierung!}
   \end{subsection}
  \end{section}
 \pagebreak

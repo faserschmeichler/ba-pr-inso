@@ -1,9 +1,0 @@
-\chapter{Algorithmen und Quellcoe}
-
-\section{Beispiele für Quellcode}
-
-\begin{lstlisting}[caption={Short code},label=shortcode]
-//Start Program
-System.out.println("Hello World!");
-//End Program
-\end{lstlisting}
