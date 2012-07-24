@@ -62,23 +62,72 @@
  	Basierend auf den Protokollen \ac{IP}, \ac{TCP} und \ac{UDP} lässt sich VoIP leicht in bestehende 
  	Infrastruktur und Dienste integrieren.
  	Im nächsten Kapitel werden die technischen Details noch näher erläutert. \\
+ 	Firmen nutzen die gleiche Infrastruktur zur Datenübertragung und zur Telefonie.
+ 	Das brachte viele Vorteile mit sich und somit auch den Durchbruch für VoIP.
+ 	Herkömmliche Telefonie war davor immer kanalorientiert gewesen. 
+ 	Im Bereich von VoIP spricht man von einer Paketorientierung im Bezug 
+ 	auf die Verbindung. \\
+	Eine paketorientierte Übertragung von Sprache nutzt Leitungskapazität 
+	gezielter aus als die bisherige Methode einer Reservierung der gesamten Leitung.
+	Durch Effizienz in der Mediumsnutzung und Flexibilität in der Anwendung ergab sich 
+	im Laufe der Zeit eine Überlegenheit von VoIP. \\
+	\todo[inline]{Quelle hinzufügen}
+	Als Konsequenz daraus ergibt sich eine hohe Erreichbarkeit.
+	Gebremst werden kann das nur durch die verfügbare Bandbreite, welche sich 
+	aber im Laufe der letzten Jahre verbessert hat. Das aufkommende Datenvolumen 
+	spielt in seltenen Fällen eine Rolle - wird jedoch von den Providern kritischer 
+	gesehen. \\
+	Wesentlich für das Zustandekommen von Internettelefonie und Gesprächen ist, 
+	dass die analoge Telefonie digital verarbeitet wird. 
+	Die Sprache wird in IP-Pakete umgewandelt und in manchen Fällen auch verschlüsselt, 
+	um die Sicherheit zu erhöhen.
+	
+ 	\todo[inline]{Quelle hinzufügen}
  	
+ 	\textbf{Vorteile von VoIP}
+ 	\begin{itemize}
+ 		\item Interne Gespräche ohne Gebühren
+ 		\item Daten und Sprachübertragung in einem Medium
+ 		\item Ortsungebundenheit im Gegensatz zum Festnetz
+ 		\item Kostenersparnis bei Auslandsgesprächen
+ 		\item Erweiterbarkeit
+ 		\item Unabhängige Komplettlösung
+ 	\end{itemize}
+ 	
+ 	\textbf{Nachteile von VoIP}
+ 	\begin{itemize}
+ 		\item Sicherheitsrisiko durch Abhängigkeit von Internet
+ 		\item Qualitätsdefizit möglicherweise durch Hardware und Bandbreite
+ 		\item Zuverlässigkeit fraglich durch Hardwaredefekt oder Leitungsausfall
+ 		\item Notrufe nur eingeschränkt möglich
+ 		\item Stromkosten wesentlich höher
+ 		\item Externe Abhängigkeit von regionaler Infrastruktur (z.B. Stromnetz)
+ 	\end{itemize}
+ 	\todo[inline]{Quelle hinzufügen}
+ 	 	
  \end{section}
  
  \label{Technische Grundlagen einer VoIP-Infrastruktur}
  \begin{section}{Technische Grundlagen einer VoIP-Infrastruktur}
-
- \label{Protokolle und Standards}
- \begin{subsection}{Protokolle und Standards}
- \end{subsection}
+	Bei der Internettelefonie gibt es mehrere Schwerpunkte, die in diesem Kapitel 
+	diskutiert werden.
+	Die Kernfragen sind der Transport der Sprache, die Sicherung von Datenströmen 
+	und Sprachinformationen und der Medienübergang in angrenzende Systeme.
+ 	\label{Protokolle und Standards}
+ 	\begin{subsection}{Protokolle und Standards}
+ 		\todo[inline]{RTP und RTCP}
+ 		\todo[inline]{H.323}
+ 		\todo[inline]{SIP}
+ 		\todo[inline]{SIP - STP}
+ 	\end{subsection}
  
- \label{Anforderungen an die technische Infrastruktur}
- \begin{subsection}{Anforderungen an die technische Infrastruktur}
- \end{subsection}
+ 	\label{Anforderungen an die technische Infrastruktur}
+ 	\begin{subsection}{Anforderungen an die technische Infrastruktur}
+ 	\end{subsection}
  
- \label{Komponenten}
- \begin{subsection}{Komponenten}
- \end{subsection}
+	 \label{Komponenten}
+ 	\begin{subsection}{Komponenten}
+ 	\end{subsection}
  
  \end{section}
  
